@@ -21,6 +21,9 @@ a {
     text-decoration: none;
     font-family: Roboto;
 }
+a:visited {
+    color: #575757;
+}
 header a {
     color: white;
 }
@@ -135,7 +138,7 @@ nav  i  {
     justify-content: center;
     background-color:#24559E;
     width: 100%;
-    transform: translateY(86px);
+    transform: translateY(76px);
     right: 0;
 }
 /* Searchbar */
@@ -147,7 +150,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    
 }
 .searchinput {
     margin: 10px 0;
@@ -175,6 +178,9 @@ main {
 .breadcrumb {
     display: inline-block;
     padding: 5px 20px;
+}
+.breadcrumb a:active {
+    color: #aaaaaa
 }
 .fa-house {
     color: #3FA115;
