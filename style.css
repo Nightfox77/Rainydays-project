@@ -21,9 +21,7 @@ a {
     text-decoration: none;
     font-family: Roboto;
 }
-a:visited {
-    color: #575757;
-}
+
 header a {
     color: white;
 }
@@ -179,9 +177,11 @@ main {
     display: inline-block;
     padding: 5px 20px;
 }
-.breadcrumb a:active {
-    color: #aaaaaa
-}
+.breadcrumb a:active, .breadcrumb a:visited {
+    color: #575757;
+} 
+    
+
 .fa-house {
     color: #3FA115;
 }
