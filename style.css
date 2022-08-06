@@ -21,6 +21,9 @@ a {
     text-decoration: none;
     font-family: Roboto;
 }
+a:hover {
+    cursor: pointer;
+}
 
 header a {
     color: white;
@@ -180,8 +183,6 @@ main {
 .breadcrumb a:active, .breadcrumb a:visited {
     color: #575757;
 } 
-    
-
 .fa-house {
     color: #3FA115;
 }
@@ -256,8 +257,12 @@ h2 {
     grid-template-columns: 5fr 1fr ;
     margin: 40px 0;
 }
+.product-container a {
+    display: none;
+}
 .product-container:hover {
     box-shadow: 2px 2px 4px #aaaaaa;
+    cursor: pointer;
 }
 .product-pic {
     padding: 5px;
