@@ -257,6 +257,7 @@ h2 {
     grid-template-rows: 2fr 0.5fr;
     grid-template-columns: 5fr 1fr ;
     margin: 40px 0;
+    font-family: Roboto;
 }
 .product-container a {
     display: none;
@@ -274,19 +275,17 @@ h2 {
     max-width: 100%;
 }
 .product-info {
-    color: black;
+    
     text-align: left;
     grid-row: 2;
     padding-left: 5px;
 }
 .product-name {
-    font-family: Roboto;
     font-size: 1.25rem;
     font-weight: bold;
     margin: 10px 0;
 }
 .product-price, .product-oldprice, .product-newprice {
-    font-family: Roboto;
     font-size: 1.25rem;
     margin: 5px 0;
     display: inline-block;
