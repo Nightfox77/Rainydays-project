@@ -44,6 +44,7 @@ header .fa-bars {
 }
 #burgermenu:checked  ~ .mobile-nav-list {
     display: flex;
+    
 }
 .nav-men-list, .nav-women-list, .main-category {
     position: relative;
@@ -55,13 +56,13 @@ header .fa-bars {
     position: absolute;
     z-index: 3001;
     display: none;
-    width: 150px;
+    width: 100px;
     top: 40px;
     flex-direction: column;
     padding: 0;
     background-color: #0B2752;
     font-family: Roboto;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 35px;
     color: white;
     text-align: center;
@@ -92,12 +93,12 @@ header .fa-bars {
 .mobile-main-category {
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-left: 10px;
 }
 .mobile-sub-category {
     font-family: Roboto;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: white;
     padding-left: 30px;
 }
@@ -111,7 +112,7 @@ header .fa-bars {
 .main-category {
     font-family: Roboto;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 nav  i  {
     color: #3FA115;
@@ -200,7 +201,7 @@ main {
     margin-bottom: 30px;
 }
 h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
     font-family: Raleway;
     font-weight: bold;
     margin: 0;
@@ -213,7 +214,7 @@ h1 {
     padding: 5px;
     margin: 0 10px;
     font-family: Roboto;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: bold;
     color: white;
     background-color: #3FA115;
@@ -234,7 +235,7 @@ h1 {
 }
 h2 {
     font-family: Raleway;
-    font-size: 2.25em;
+    font-size: 2.25rem;
     font-style: italic;
     font-weight: 500;
     color: #0B2752;
@@ -280,13 +281,13 @@ h2 {
 }
 .product-name {
     font-family: Roboto;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     font-weight: bold;
     margin: 10px 0;
 }
 .product-price, .product-oldprice, .product-newprice {
     font-family: Roboto;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     margin: 5px 0;
     display: inline-block;
 }
@@ -319,7 +320,7 @@ footer .line {
 }
 h3 {
     font-family: Raleway;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: bold;
     margin-bottom: 5px;
