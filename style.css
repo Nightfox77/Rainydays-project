@@ -1,5 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
+}
+main {
+    padding-top: 104px;
 }
 /* Headbar with logo,burgermenu,shoppingcart */
 nav {
@@ -73,6 +79,7 @@ header .fa-bars {
     align-items: center;
     justify-content: space-around;
 }
+/* navigation mobile version */
 .mobile-nav {
     display: flex;
     flex-basis: 33%;
@@ -114,13 +121,14 @@ header .fa-bars {
     font-weight: bold;
     font-size: 1.5rem;
 }
-nav  i  {
-    color: #3FA115;
+.icons  i  {
+    color: white;
     cursor: pointer;
 }
-#searchglass {
-    display: none;
+.icons i:hover {
+    color: #3FA115;
 }
+
 .icons {
     display: flex;
     flex-direction: row-reverse;
@@ -128,6 +136,10 @@ nav  i  {
     justify-content: right;
     gap: 20px;
     flex-basis: 33%;
+}
+/* Searchbar */
+#searchglass {
+    display: none;
 }
 #searchglass:checked ~ .searchbar {
     display: flex;
@@ -143,16 +155,11 @@ nav  i  {
     transform: translateY(76px);
     right: 0;
 }
-/* Searchbar */
-main {
-    padding-top: 104px;
-}
 .search {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 .searchinput {
     margin: 10px 0;
@@ -198,6 +205,7 @@ main {
     max-width: 10%;
     display: block;
     padding: 5px;
+    padding-top: 40px;
     margin-bottom: 30px;
 }
 h1 {
@@ -258,9 +266,7 @@ h2 {
     grid-template-columns: 5fr 1fr ;
     margin: 40px 0;
     font-family: Roboto;
-}
-.product-container a {
-    display: none;
+    color: #242424;
 }
 .product-container:hover {
     box-shadow: 2px 2px 4px #aaaaaa;
@@ -370,6 +376,7 @@ h3 span {
         display: inline-block;
         max-width: 100%;
         min-width: 90%;
+        padding-top: 50px;
         text-align: center;
     }
 }
