@@ -390,7 +390,7 @@ h3 span {
     }
 }
 @media screen and (max-width:370px) {
-    #glass {
+    #glassicon {
         display: none;
     }
     .searchbar {
