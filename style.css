@@ -87,7 +87,7 @@ header .fa-bars {
 .mobile-nav-list {
     display: none;
     line-height: 35px;
-    top: 105px;
+    top: 104px;
     position: absolute;
     z-index: 2000;
     background-color: #0B2752;
