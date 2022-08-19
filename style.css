@@ -364,7 +364,7 @@ h3 span {
 .socialicons .uparrow {
     margin-left: auto;
 }
-@media screen and (min-width:768px) { 
+@media screen and (min-width:767px) { 
     .mobile-nav {
         display: none;
     }
@@ -387,6 +387,14 @@ h3 span {
     .logo {
         align-items: center;
         justify-content: center;
+    }
+}
+@media screen and (max-width:370px) {
+    #glass {
+        display: none;
+    }
+    .searchbar {
+        display: flex;
     }
 }
 
