@@ -257,14 +257,15 @@ h2 {
 .productgrid {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+    
     gap: 2rem;
     padding: 0 50px;
 }
 .product-container {
     display: grid;
-    grid-template-rows: 2fr 0.5fr;
-    grid-template-columns: 5fr 1fr ;
-    margin: 40px 0;
+    grid-template-rows: 1fr 0.1fr;
+    grid-template-columns:  5fr 0.5fr;
+    margin: 20px 0;
     font-family: Roboto;
     color: #242424;
 }
