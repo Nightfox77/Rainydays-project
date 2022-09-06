@@ -15,45 +15,37 @@
 <body>
 <header>
     <nav>
-    <section class="mobile-nav">
+    <div class="mobile-nav">
         <label for="burgermenu"><i class="fa-solid fa-bars fa-xl"></i></label>
         <input type="checkbox" id="burgermenu">
-            <ul class="mobile-nav-list">
-                <li><a href="#" class="mobile-main-category">Men`s</a></li>
-                <li><a href="#" class="mobile-sub-category">Jacket 1</a></li>
-                <li><a href="#" class="mobile-sub-category">Jacket 2</a></li>
-                <li><a href="#" class="mobile-sub-category">Jacket 3</a></li>
-                <li><a href="#" class="mobile-main-category">Women`s</a></li>
-                <li><a href="#" class="mobile-sub-category">Jacket 4</a></li>
-                <li><a href="#" class="mobile-sub-category">Jacket 5</a></li>
-                <li><a href="#" class="mobile-sub-category">Jacket 6</a></li>
-                <li><a href="#" class="mobile-main-category">About</a></li>
-                <li><a href="#" class="mobile-main-category">Contact</a></li>
-            </ul>
-    </section>
+            <div class="mobile-nav-list">
+                <div>               
+                    <a href="#" class="mobile-main-category">Men`s</a>
+                    <div class="mobile-sub-category">
+                        <ul >
+                            <li><a href="#">Jacket 1</a></li>
+                            <li><a href="#">Jacket 2</a></li>
+                            <li><a href="#">Jacket 3</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <div>
+                    <a href="#" class="mobile-main-category">Women`s</a>
+                    <div class="mobile-sub-category">
+                        <ul id="womens-list" >
+                            <li><a href="#">Jacket 4</a></li>
+                            <li><a href="#">Jacket 5</a></li>
+                            <li><a href="#">Jacket 6</a></li>
+                        </ul>
+                    </div>
+                </div>   
+                <a href="about.html" class="mobile-main-category">About</a></li>
+                <a href="#" class="mobile-main-category">Contact</a></li>
+            </div>
+    </div>
         <div class="logo">
-        <a href="#"><img src="Images\RainyDays_Logo(4).png"></a>
+        <a href="#"><img src="Images\RainyDays_Logo(4).png" alt="Rainydays logo"></a>
         </div>
-        <div class="nav-container">
-            <div class="nav-men-list">
-                <a href="#" class="main-category">Men`s</a>
-                <ul class="sub-category" >
-                    <li><a href="#">Jacket 1</a></li>
-                    <li><a href="#">Jacket 2</a></li>
-                    <li><a href="#">Jacket 3</a></li>
-                </ul>
-            </div>
-            <div class="nav-women-list">
-                <a href="#" class="main-category">Women`s</a>
-                <ul class="sub-category">
-                    <li><a href="#">Jacket 4</a></li>
-                    <li><a href="#">Jacket 5</a></li>
-                    <li><a href="#">Jacket 6</a></li>
-                </ul>
-            </div>
-                <a href="#" class="main-category">About</a>
-                <a href="#" class="main-category">Contact</a>
-            </div>
         <div class="icons">
             <i class="fa-solid fa-cart-shopping fa-xl"></i>
             <label for="searchglass"><i class="fa-solid fa-magnifying-glass fa-xl" id="glassicon"></i></label>
@@ -71,7 +63,7 @@
     <section class="breadcrumbs">
         <div class="breadcrumb">
             <i class="fa-solid fa-house"></i>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
         </div>
     </section>
     <section class="welcome">
@@ -90,7 +82,7 @@
     <section class="productgrid">
             <a href="#" class="product-container">
                 <div class="product-pic">
-                <img src="Images\RainyDays_Jacket1.png">
+                <img src="Images\RainyDays_Jacket1.png" alt="Jacket men 1">
                 </div>
                 <div class="heart">
                     <i class="fa-regular fa-heart fa-xl"></i>
@@ -109,7 +101,7 @@
         </a>
         <a href="#" class="product-container">
             <div class="product-pic">
-                <img src="Images\RainyDays_Jacket2.png">
+                <img src="Images\RainyDays_Jacket2.png" alt="Jacket women 4">
             </div>
             <div class="heart">
                 <i class="fa-regular fa-heart fa-xl"></i>
@@ -129,7 +121,7 @@
         </a>
         <a href="#" class="product-container">
             <div class="product-pic">
-                <img src="Images\RainyDays_Jacket6.png">
+                <img src="Images\RainyDays_Jacket6.png" alt="Jacket men 3">
             </div>
             <div class="heart">
                 <i class="fa-regular fa-heart fa-xl"></i>
@@ -148,7 +140,7 @@
         </a>
         <a href="#" class="product-container">
             <div class="product-pic">
-            <img src="Images\RainyDays_Jacket1.png">
+            <img src="Images\RainyDays_Jacket1.png" alt="Jacket men 1">
             </div>
             <div class="heart">
                 <i class="fa-regular fa-heart fa-xl"></i>
@@ -167,7 +159,7 @@
     </a>
     <a href="#" class="product-container">
         <div class="product-pic">
-            <img src="Images\RainyDays_Jacket6.png">
+            <img src="Images\RainyDays_Jacket6.png" alt="Jacket men 3">
         </div>
         <div class="heart">
             <i class="fa-regular fa-heart fa-xl"></i>
