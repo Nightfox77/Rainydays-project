@@ -49,6 +49,7 @@ header .fa-bars {
 }
 .logo img {
     max-width: 150px;
+    
     padding: 10px 0;
 }
 #burgermenu  {
@@ -74,11 +75,15 @@ header .fa-bars {
     width: 130px;
     flex-direction: column;
 }
-.mobile-main-category {
+.mobile-nav-list label, .mobile-main-category {
+    color: white;
     font-family: Roboto;
     font-weight: bold;
     font-size: 1.5rem;
     
+}
+#main-category-men, #main-category-women {
+    display: none;
 }
 .mobile-sub-category {
     
@@ -153,9 +158,21 @@ header .fa-bars {
 .search .fa-magnifying-glass {
     color: #575757;
 }
+.breadcrumbs {
+    background-color: white;
+    
+    
+}
 .breadcrumb {
-    display: inline-block;
+    display: flex;
+    height: 20px;
     padding: 5px 20px;
+    margin: 0 auto;
+    gap: 5px;
+    
+}
+.breadcrumb p {
+    margin: 0;
 }
 .breadcrumb a:active, .breadcrumb a:visited {
     color: #575757;
@@ -226,7 +243,8 @@ h2 {
 .productgrid {
     display: grid;
     grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
-    
+    max-width: 100%;
+    margin: 0 auto;
     gap: 2rem;
     padding: 0 50px;
 }
@@ -235,16 +253,18 @@ h2 {
     grid-template-rows: 1fr 0.1fr;
     grid-template-columns:  5fr 0.5fr;
     margin: 20px 0;
+    padding: 10px;
     font-family: Roboto;
     color: #242424;
+    border: 1px solid #c4c4c4;
 }
 .product-container:hover {
-    box-shadow: 2px 2px 4px #aaaaaa;
+    box-shadow: 2px 2px 4px #d2d2d2;
     cursor: pointer;
 }
 .product-pic {
     padding: 5px;
-    background-color: #ededed;
+    background-color: white;
     grid-column: 1 / 3;
 }
 .product-pic img {
@@ -261,7 +281,7 @@ h2 {
     margin: 10px 0;
 }
 .product-price, .product-oldprice, .product-newprice {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin: 5px 0;
     display: inline-block;
 }
@@ -389,6 +409,7 @@ h3 span,h1 span {
     }
     .mobile-sub-category ul {
         display: none;
+        text-align: center;
         
     }
     .mobile-sub-category  {
@@ -397,7 +418,7 @@ h3 span,h1 span {
         padding: 0 10px;
         margin: 10px 10px 0 0;
     }
-    .mobile-main-category:active ~ .mobile-sub-category ul, .mobile-main-category:focus ~ .mobile-sub-category ul {
+    #main-category-men:checked ~ .mobile-sub-category ul, #main-category-women:checked ~ .mobile-sub-category ul {
         display: inline-block;
     }
     #womens-list {
@@ -436,6 +457,9 @@ h3 span,h1 span {
         grid-auto-flow: column;
         height: 500px;
     }
+    #glassicon {
+        display: none;
+    }
 }
     
 
@@ -445,7 +469,7 @@ h3 span,h1 span {
     }
 }
 @media screen and (max-width:370px) {
-    #glassicon {
+    .icons .fa-user {
         display: none;
     }
     .searchbar {
