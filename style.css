@@ -174,7 +174,7 @@ header .fa-bars {
 .breadcrumb p {
     margin: 0;
 }
-.breadcrumb a:active, .breadcrumb a:visited {
+.breadcrumb a, .breadcrumb a:active, .breadcrumb a:visited {
     color: #575757;
 } 
 .fa-house {
@@ -602,6 +602,9 @@ h3 span,h1 span {
     }
     .additionalinfo {
         flex-direction: column;
+    }
+    .buttoncontainer .box {
+        padding: 0 30px;
     }
 }
     
