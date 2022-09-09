@@ -6,6 +6,7 @@ body {
 }
 main {
     padding-top: 104px;
+    
 }
 /* Headbar with logo,burgermenu,shoppingcart */
 nav {
@@ -210,14 +211,15 @@ h1 {
     font-family: Roboto;
     font-size: 1.25rem;
     font-weight: bold;
-    color: white;
     background-color: #3FA115;
     border: none;
-    border-radius: 5px;
+}
+.welcome-btns a {
+    color: white;
 }
 .welcome-btns button:hover {
-    background-color: #307B10;
-    transition: ease-in-out 300ms;
+    box-shadow: inset 300px 0 #28670d;
+    transition: 1s ease-in-out;
     cursor: pointer;
 }
 .welcome-btns {
@@ -391,7 +393,7 @@ h3 span,h1 span {
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* Men jacket */
+/* Single jacket */
 .productpres {
     max-width: 100%;
     padding: 20px;
@@ -457,7 +459,6 @@ h3 span,h1 span {
 .sizebox p {
     margin: 0;
     font-size: .75em;
-    
 }
 .colorbox:hover, .sizebox:hover {
     transform: scale(120%);
@@ -468,7 +469,7 @@ h3 span,h1 span {
 .buttoncontainer {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 .buttoncontainer .input {
     width: 10%;
@@ -476,25 +477,35 @@ h3 span,h1 span {
     border: none;
     text-align: center;
     background-color: #d2d2d2;
-    border-radius: 5px 0 0 5px;
+    
 }
 .buttoncontainer .box {
     background-color: #3FA115;
     color: white;
     gap: 20px;
-    
     padding: 0 70px;
     text-align: center;
     align-items: center;
     font-weight: bold;
-    border-radius: 0 5px 5px 0;
+    
+}
+.buttoncontainer .box:hover {
+    box-shadow: inset 300px 0 #28670d;
+    transition: 1s ease-in-out;
 }
 .additionalinfo {
     display: flex;
     padding: 20px;
     gap: 20px;
 }
-
+.additionalinfo h4 {
+    color: #0B2752;
+    
+}
+.additionalinfo h3 {
+    color: #24559E;
+    
+}
 .jacketinfo {
     flex-basis: 50%;
 }
@@ -502,14 +513,63 @@ h3 span,h1 span {
    padding-top: 10px;
 }
 .brandlogo img {
-    max-width: 100%;
+    width: 100%;
     max-height: 200px;
 }
-
 .brandinfo {
     flex-basis: 50%;
 }
+/* Login */
+.forms {
+    display: flex;
+    
+    max-width: 60%;
+    margin: 50px auto;
+    background-color: #d2d2d2;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    gap: 20px;
+    margin: 20px;
+    font-family: Roboto;
+}
+.login span {
+    color: red;
+    font-weight: bold;
+}
 
+.input {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #575757;
+}
+.button {
+    color: white;
+    background-color: #3FA115;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 1.25em;
+    
+}
+.button:hover {
+    box-shadow: inset 300px 0 #28670d;
+    transition: 1s ease-in-out;
+}
+.signin {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4c4c4;
+    font-family: Roboto;
+}
 /* Media queries */
 @media screen and (min-width:1200px) {
     header .fa-bars {
@@ -586,6 +646,11 @@ h3 span,h1 span {
         grid-column: 1 / 2;
     }
     
+}
+@media screen and (max-width:900px) {
+    .forms {
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:500px) {
     .about-container {
