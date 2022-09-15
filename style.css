@@ -269,8 +269,7 @@ h2 {
 }
 .product-price, .product-oldprice, .product-newprice {
     font-size: 1.1rem;
-    margin: 5px 0;
-    display: flex;
+    display: inline;
     font-family: Roboto;
     color: #242424;
 }
@@ -622,7 +621,6 @@ h3 span,h1 span {
 }
 /* Shoppingcart */
 .cartpres {
-    
     padding: 20px ;
     font-family: Roboto;
 }
@@ -638,7 +636,7 @@ h3 span,h1 span {
 }
 .cartpres.container span {
     color: #c4c4c4;
-    margin: 0 5px;
+    margin: 0 5px 0 0;
 }
 .cartpres.line {
     grid-column: 1 /3;
@@ -655,18 +653,14 @@ h3 span,h1 span {
     flex-direction: column;
     grid-column: 1 / 3;
     justify-content: center;
-    
     margin: 0 auto;
-    
 }
 .cartpres.pricebox {
     padding: 5px 0;
 }
-
 .cartpres.pic img {
     max-width: 100%;
     height: 100px;
-   
 }
 .select {
     grid-column: 2;
@@ -674,27 +668,61 @@ h3 span,h1 span {
 #select {
     width: 100px;
 }
-.cartpres.remove {
+.buttoncontainer.remove {
     display: flex;
-    padding: 5px 10px;
     width: max-content;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
+    color: #242424;
     margin: 10px auto;
-    
 }
-.cartpres.remove i {
-    margin: auto 10px;
+.remove {
+    border: 1px solid #242424;
+    padding: 5px 40px;
+    color: #242424;
 }
-#removebox {
-    display: none;
+.remove:hover {
+    color: white;
+    box-shadow: inset 200px 0 rgb(190, 0, 0);
+    transition: 1s ease-in-out;
+    border-color: rgb(190, 0, 0);
 }
-#removebox:checked .cartpres.container {
-    display: none;
+.remove i {
+    color: #242424;
+    margin: 0 5px;
 }
 .button.checkout {
     width: 300px;
+}
+/* Contactform */
+.contactform {
+    margin: 40px 20px;
+    
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    gap: 10px;
+}
+.contactform.container {
+    background-color: #d2d2d2;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.contactform.item {
+    margin: 10px;
+    
+}
+.contactform.item span {
+    color: red;
+}
+.contactform.item input, .contactform.item textarea {
+    border: none;
+    display: block;
+}    
+.contactform #name {
+    margin: 0;
+}
+.contactform textarea {
+    height: 150px;
 }
 /* Media queries */
 @media screen and (min-width:1200px) {
@@ -796,12 +824,15 @@ h3 span,h1 span {
     .breadcrumb {
         display: flex;
     }
-}
-@media screen and (min-width:700px) {
-    .cartpres {
-       
-        margin: 0 auto;
+    .contactform {
+        margin: 40px auto;
+        width: 70%;
+        
     }
+    
+    
+}
+@media screen and (min-width:800px) {
     .cartpres.container {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-row: 1fr;
