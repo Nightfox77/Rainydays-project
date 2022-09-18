@@ -887,6 +887,7 @@ h3 span,h1 span {
     flex-direction: column;
     font-family: Roboto;
     gap: 10px;
+    
 }
 .contactform.container {
     background-color: #d2d2d2;
