@@ -6,7 +6,6 @@ body {
 }
 main {
     padding-top: 104px;
-    
 }
 p {
     font-family: Roboto;
@@ -35,12 +34,10 @@ li {
 a {
     text-decoration: none;
     font-family: Roboto;
-
 }
 a:hover {
     cursor: pointer;
 }
-
 header a {
     color: white;
 }
@@ -55,7 +52,6 @@ header .fa-bars {
 }
 .logo img {
     max-width: 150px;
-    
     padding: 10px 0;
 }
 #burgermenu  {
@@ -86,9 +82,7 @@ header .fa-bars {
     font-family: Roboto;
     font-weight: bold;
     font-size: 1.5rem;
-    
 }
-
 #main-category-men, #main-category-women {
     display: none;
 }
@@ -109,7 +103,6 @@ header .fa-bars {
 .icons i:hover {
     color: #3FA115;
 }
-
 .icons {
     display: flex;
     flex-direction: row-reverse;
@@ -124,7 +117,6 @@ header .fa-bars {
 }
 #searchglass:checked ~ .searchbar {
     display: flex;
-    
 }
 .searchbar {
     display: none;
@@ -189,7 +181,6 @@ header .fa-bars {
     background-color: #c4c4c4;
     padding: 20px;
     text-align: center;
-    
 }
 .welcome-headline {
     max-width: 100%;
@@ -242,7 +233,6 @@ h2 {
     grid-template-columns:  5fr 0.5fr;
     margin: 20px 0;
     padding: 10px;
-    
     border: 1px solid #c4c4c4;
 }
 .product-container:hover {
@@ -267,25 +257,20 @@ h2 {
     font-weight: bold;
     margin: 10px 0 0 0;
     font-family: Roboto;
-    
-    
 }
 .product-price, .product-oldprice, .product-newprice {
     font-size: 1.1rem;
     display: inline;
     font-family: Roboto;
-    
 }
 .product-stars {
     margin-top: 10px;
 }
 .product-stars p {
-   
-    display: inline-block;
+   display: inline-block;
 }
-
 .fa-star, .fa-star-half-stroke {
-    color: rgb(255, 234, 0);
+    color: #0B2752;
 }
 .product-oldprice {
     text-decoration: line-through;
@@ -360,7 +345,6 @@ h3 span,h1 span {
     justify-content: center;
     margin: 20px;
     gap: 20px;
-    
 }
 .about-container {
     display: grid;
@@ -391,7 +375,6 @@ h3 span,h1 span {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
 .productpres .container {
     display: grid;
@@ -424,7 +407,6 @@ h3 span,h1 span {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    
 }
 .colorselection, .sizeselection {
     display: flex;
@@ -501,10 +483,10 @@ h3 span,h1 span {
     display: flex;
     padding: 20px;
     gap: 20px;
-    
 }
 .additionalinfo h4 {
     color: #0B2752;
+    font-family: Raleway;
 }
 .additionalinfo h3 {
     color: #24559E;
@@ -581,7 +563,7 @@ h3 span,h1 span {
     display: inline-block;
     height: 1px;
     flex-basis: 30%;
-    background-color: #242424;
+    background-color: white;
 }
 .altbuttons {
     display: flex;
@@ -627,8 +609,6 @@ h3 span,h1 span {
     padding: 20px 0;
     font-family: Roboto;
     justify-content: center;
-    
-
 }
 .progress.greenlevel {
     display: flex;
@@ -677,16 +657,19 @@ h3 span,h1 span {
 .cartpres {
     padding: 20px ;
     font-family: Roboto;
+    background-color: #24559E;
 }
 .cartpres.container {
     display: grid;
     padding: 0;
+    background-color: white;
     border: 1px solid #242424;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
 }
 .cartpres.info,.cartpres.pic,.select {
     padding: 0;
+    background-color: white;
 }
 .cartpres.container span {
     color: #c4c4c4;
@@ -708,9 +691,11 @@ h3 span,h1 span {
     grid-column: 1 / 3;
     justify-content: center;
     margin: 0 auto;
+    background-color: white;
 }
 .cartpres.pricebox {
     padding: 5px 0;
+    background-color: white;
 }
 .cartpres.pic img {
     max-width: 100%;
@@ -732,6 +717,7 @@ h3 span,h1 span {
     border: 1px solid #242424;
     padding: 5px 40px;
     color: #242424;
+    background-color: white;
 }
 .remove:hover {
     color: white;
@@ -861,7 +847,6 @@ h3 span,h1 span {
 /* Success */
 .formcontainer {
     background-color: #d2d2d2;
-    
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -888,7 +873,6 @@ h3 span,h1 span {
     display: flex;
     align-items: center;
     gap: 10px;
-    
 }
 #total {
     justify-content: center;
@@ -896,7 +880,6 @@ h3 span,h1 span {
     padding: 10px 0;
     gap: 20px;
 }
-
 /* Contactform */
 .contactform {
     margin: 40px 20px;
@@ -947,11 +930,9 @@ h3 span,h1 span {
     #logincategory {
         display: none;
     }
-    
     .mobile-sub-category ul {
         display: none;
         text-align: center;
-        
     }
     .mobile-sub-category  {
         position: absolute;
@@ -1017,14 +998,20 @@ h3 span,h1 span {
     .productpres .pic {
         grid-column: 1 ;
     }
+    .cartpres.container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 80%;
+        font-size: 1.25em;
+        margin: auto;
+    }
 }
 @media screen and (max-width:900px) {
     .forms {
         flex-direction: column;
     }
+    
 }
 @media screen and (min-width:500px) {
-    
     .contactform {
         margin: 40px auto;
         width: 70%;
@@ -1033,16 +1020,11 @@ h3 span,h1 span {
         align-items: center;
     }
     .formcontainer {
-        width: 70%;
+        width: 50%;
     }
-    
 }
 @media screen and (min-width:800px) {
-    .cartpres.container {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-row: 1fr;
-        font-size: 1.25em;
-    }
+    
     .cartpres.line {
         display: none;
     }
@@ -1097,8 +1079,6 @@ h3 span,h1 span {
         }.newaddress, .address {
             width: 50%;
         }
-    
-        
 }
 @media screen and (min-width: 370px) {
     .mobile-sub-category {
@@ -1109,12 +1089,10 @@ h3 span,h1 span {
     .icons .fa-user {
         display: none;
     }
-    
     .mobile-nav-list {
         z-index: 3001;
     }
     .mobile-sub-category {
         display: block;
     }
-    
 }
