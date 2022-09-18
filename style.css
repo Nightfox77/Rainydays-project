@@ -882,15 +882,15 @@ h3 span,h1 span {
 }
 /* Contactform */
 .contactform {
-    margin: 40px 20px;
+    
     display: flex;
     flex-direction: column;
     font-family: Roboto;
     gap: 10px;
-    
+    background-color: white;
 }
 .contactform.container {
-    background-color: #d2d2d2;
+    
     display: grid;
     place-items: center;
     padding: 20px;
@@ -902,7 +902,7 @@ h3 span,h1 span {
     color: red;
 }
 .contactform.item input, .contactform.item textarea {
-    border: none;
+    
     display: block;
 }    
 .contactform #name {
