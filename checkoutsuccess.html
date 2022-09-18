@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Outdoor clothing">
-    <title>Rainydays Shoppingcart</title>
+    <title>Rainydays Checkout Success</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5290b1a98f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,13 +76,13 @@
             <a href="menjacket.html">Men jacket 1</a>
             <p> >> </p>
             <a href="cart.html">Shoppingcart</a>
+            <p> >> </p>
+            <a href="checkout.html">Checkout</a>
+            <p> >> </p>
+            <a href="#">Success</a>
         </div>
     </section>
-    <section class="welcome">
-        <div class="welcome-headline">
-            <h1>My Cart (1)</h1>
-        </div>
-    </section>
+    
     <section class="progress">
         <div class="progress greenlevel">
             <p class="progress greenlevel name"><strong>My Cart</strong></p>
@@ -91,64 +91,79 @@
         <div class="progress steps">
             <i class="fa-solid fa-circle fa-xs"></i>
             <i class="fa-solid fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
         </div>
         <div class="progress greenlevel">
             <p class="progress greenlevel name"><strong>Checkout</strong></p>
-            <div class="progress whitelevel number">2</div>
+            <div class="progress greenlevel number">2</div>
         </div>
         <div class="progress steps">
-            <i class="fa-regular fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
         </div>
         <div class="progress greenlevel">
             <p class="progress greenlevel name"><strong>Success</strong></p>
-            <div class="progress whitelevel number">3</div>
+            <div class="progress greenlevel number">3</div>
         </div>
     </section>
-    <section class="cartpres">
-        <div class="cartpres container">
-            <div class="cartpres pic">
-                <img src="/Images/RainyDays_Jacket1.JPG" alt="Jacket men 1">
+    <section class="form">
+        <div class="formcontainer">
+            <i class="fa-solid fa-circle-check fa-5x" style="color:#3FA115"></i>
+            <div class="formcolumn">
+                <h3 style="color: #0B2752; font-size: 20px; padding-bottom: 20px; margin: 20px 0">Thank you for your money</h3>
+                <div class="order" style="background-color: #24559E; padding: 10px;">
+                    <p style="color: white;margin: 0;">Your order # is 12345 - pending</p>
+                </div>
+                    <p style="margin: 20px 0;">Date of order DD/MM/YYYY</p>
+                    <p style="margin: 20px 0;"><strong>Order summary</strong></p>
+                <div class="formrow">
+                    <p><strong>1x</strong></p>
+                    <div class="cartpres pic">
+                        <img src="/Images/RainyDays_Jacket1.JPG" alt="Jacket men 1">
+                    </div>
+                    <div class="cartpres info">
+                        <p><strong>Jacket 1/m</strong></p>
+                        <p><span>Color:</span> Red/Gray</p>
+                        <p><span>Size:</span> Large</p>
+                    </div>
+                </div>
+                <div class="formrow" id="total" style="background-color: #c2c2c2;">
+                    <p><strong>Total $ 129.99</strong></p>
+                    <p style="font-size: 14px;">incl. free shipping</p> 
+                </div>
+        </div>
+                
+            <div class="formcolumn">
+                    <p style="margin: 20px 0;"><strong>Payment method</strong></p>
+                <div class="formrow">
+                    <div class="formcolumn">
+                        <i class="fa-brands fa-cc-visa fa-2x"></i>
+                    </div>
+                    <div class="formcolumn" id="cardleft">
+                        <p>Card #: xxxx-xxxx-xxxx</p>
+                        <p>Exp. date: xx/xxxx</p>
+                    </div>
+                </div>
             </div>
-            <div class="cartpres info">
-                <p><strong>Jacket 1/m</strong></p>
-                <p><span>Color:</span> Red/Gray</p>
-                <p><span>Size:</span> Large</p>
-            </div>
-           <div class="cartpres select">
-                <label for="select"></label>
-                <select id="select">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                </select>
-            </div>
-            <div class="cartpres line"></div>
-            <div class="cartpres pricesection">
-            <div class="cartpres pricebox">
-                <p class="product-price"><span>Subtotal:</span><strong>$ 129.99</strong></p>
-            </div>
-            <div class="cartpres pricebox">
-                <p class="product-price"><span>Shipping:</span><strong>Free</strong></p>
+                
+                <div class="formcolumn">
+                    <p style="margin: 20px 0;"><strong>Shipping address</strong></p>
+                <div class="formrow">
+                    <div class="formcolumn">
+                        <i class="fa-solid fa-truck-arrow-right fa-2x" style="color: #3FA115;"></i>
+                    </div>
+                    <div class="formcolumn">
+                        <p>Customer Whatever</p>
+                        <p>Somestreet 23</p>
+                        <p>1010 Addresscity</p>
+                        <p>Countryland</p>
+                    </div>
+                </div>
             </div>
             </div>
         </div>
-            </div>
-        </div>
-        <div class="buttoncontainer">
-            <a href="#" class="remove">Remove<i class="fa-regular fa-circle-xmark"></i></a>
-        </div>
-        <div class="buttoncontainer">
-            <a href="checkout.html" class="button checkout">Continue to Checkout</a>
-        </div>
-    
-        
-            
-        
-    
+
     </section>
 </main>   
 <footer>

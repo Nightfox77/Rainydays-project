@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Outdoor clothing">
-    <title>Rainydays Shoppingcart</title>
+    <title>Rainydays Checkout Payment</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5290b1a98f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,11 +76,13 @@
             <a href="menjacket.html">Men jacket 1</a>
             <p> >> </p>
             <a href="cart.html">Shoppingcart</a>
+            <p> >> </p>
+            <a href="checkout.html">Checkout</a>
         </div>
     </section>
     <section class="welcome">
         <div class="welcome-headline">
-            <h1>My Cart (1)</h1>
+            <h1>Payment</h1>
         </div>
     </section>
     <section class="progress">
@@ -91,15 +93,15 @@
         <div class="progress steps">
             <i class="fa-solid fa-circle fa-xs"></i>
             <i class="fa-solid fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
         </div>
         <div class="progress greenlevel">
             <p class="progress greenlevel name"><strong>Checkout</strong></p>
-            <div class="progress whitelevel number">2</div>
+            <div class="progress greenlevel number">2</div>
         </div>
         <div class="progress steps">
-            <i class="fa-regular fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
             <i class="fa-regular fa-circle fa-xs"></i>
         </div>
         <div class="progress greenlevel">
@@ -107,48 +109,43 @@
             <div class="progress whitelevel number">3</div>
         </div>
     </section>
-    <section class="cartpres">
-        <div class="cartpres container">
-            <div class="cartpres pic">
-                <img src="/Images/RainyDays_Jacket1.JPG" alt="Jacket men 1">
+    <section class="form">
+    <div class="checkoutpayform">
+        <div class="paycolumn">
+            <h3 style="color: white;">Payment methods</h3>
+            <div class="row">
+            <a href="www.paypal.com" class="paybutton"><i class="fa-brands fa-paypal fa-xl"></i>Paypal</a>
+            <a href="#" class="paybutton"><i class="fa-brands fa-cc-visa fa-xl"></i>Credit Card</a>
             </div>
-            <div class="cartpres info">
-                <p><strong>Jacket 1/m</strong></p>
-                <p><span>Color:</span> Red/Gray</p>
-                <p><span>Size:</span> Large</p>
-            </div>
-           <div class="cartpres select">
-                <label for="select"></label>
-                <select id="select">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                </select>
-            </div>
-            <div class="cartpres line"></div>
-            <div class="cartpres pricesection">
-            <div class="cartpres pricebox">
-                <p class="product-price"><span>Subtotal:</span><strong>$ 129.99</strong></p>
-            </div>
-            <div class="cartpres pricebox">
-                <p class="product-price"><span>Shipping:</span><strong>Free</strong></p>
-            </div>
+            <div class="cardinfo">
+                    <div class="row">
+                    <p><strong>Credit Cards</strong></p>
+                    <i class="fa-brands fa-cc-visa fa-xl"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-xl"></i>
+                    <i class="fa-brands fa-google-pay fa-xl"></i>
+                </div>
+                <div class="line"></div>
+                <div class="column">
+                    <label for="cardholder">Cardholder`s Name</label>
+                    <input type="text" id="cardholder">
+                    <label for="cardnumber">Cardnumber</label>
+                    <input type="number" id="cardnumber" placeholder=****-****-****-****>
+                    <div class="row">
+                        <div class="column">
+                            <label for="enddate">Exp. date</label>
+                            <input type="date" id="enddate">
+                        </div>
+                        <div class="column">
+                            <label for="cvv">Cvv</label>
+                            <input type="number" id="cvv">
+                        </div>
+                        
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <a href="checkoutsuccess.html" class="button">Pay Now</a>
+                </div>
             </div>
         </div>
-            </div>
-        </div>
-        <div class="buttoncontainer">
-            <a href="#" class="remove">Remove<i class="fa-regular fa-circle-xmark"></i></a>
-        </div>
-        <div class="buttoncontainer">
-            <a href="checkout.html" class="button checkout">Continue to Checkout</a>
-        </div>
-    
-        
-            
-        
-    
     </section>
 </main>   
 <footer>

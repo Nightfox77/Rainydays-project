@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Outdoor clothing">
+    <title>Rainydays Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5290b1a98f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav>
+    <div class="mobile-nav">
+        <label for="burgermenu"><i class="fa-solid fa-bars fa-xl"></i></label>
+        <input type="checkbox" id="burgermenu">
+            <div class="mobile-nav-list">
+                <div>
+                    <label for="main-category-men">Men`s</label>              
+                    <input type="checkbox" id="main-category-men">
+                    <div class="mobile-sub-category">
+                        <ul >
+                            <li><a href="alljackets-men.html">All</a></li>
+                            <li><a href="menjacket.html">Jacket 1</a></li>
+                            <li><a href="menjacket.html">Jacket 2</a></li>
+                            <li><a href="menjacket.html">Jacket 3</a></li>
+                        </ul>
+                    </div>
+                </div> 
+                <div>
+                    <label for="main-category-women">Women`s</label>              
+                    <input type="checkbox" id="main-category-women">
+                    <div class="mobile-sub-category">
+                        <ul id="womens-list" >
+                            <li><a href="alljackets-women.html">All</a></li>
+                            <li><a href="womenjacket.html">Jacket 4</a></li>
+                            <li><a href="womenjacket.html">Jacket 5</a></li>
+                            <li><a href="womenjacket.html">Jacket 6</a></li>
+                        </ul>
+                    </div>
+                </div>   
+                <a href="about.html" class="mobile-main-category">About</a></li>
+                <a href="contact.html" class="mobile-main-category">Contact</a></li>
+                <a href="login.html" class="mobile-main-category" id="logincategory">Login / Sign in</a></li>
+            </div>
+    </div>
+        <div class="logo">
+        <a href="index.html"><img src="Images\RainyDays_Logo(4).png" alt="Rainydays logo"></a>
+        </div>
+        <div class="icons">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+            <label for="searchglass"><i class="fa-solid fa-magnifying-glass fa-xl" id="glassicon"></i></label>
+            <input type="checkbox" id="searchglass">
+            <a href="login.html"><i class="fa-solid fa-user fa-xl"></i></a>
+        <div class="searchbar">
+            <form class="search">
+                <input type="search" name="searchbar" placeholder="Search.." class="searchinput">
+                <button type="submit" class="searchbutton"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+            </form>
+        </div>
+    </div>
+    </nav>
+</header>
+<main>
+    <section class="breadcrumbs">
+        <div class="breadcrumb">
+            <i class="fa-solid fa-house"></i>
+            <a href="index.html">Home</a>
+            <p> >> </p>
+            <a href="alljackets-men.html">Men Jackets all </a>
+            <p> >> </p>
+            <a href="menjacket.html">Men jacket 1</a>
+            <p> >> </p>
+            <a href="cart.html">Shoppingcart</a>
+            <p> >> </p>
+            <a href="checkout.html">Checkout</a>
+        </div>
+    </section>
+    <section class="welcome">
+        <div class="welcome-headline">
+            <h1>Checkout</h1>
+        </div>
+    </section>
+    <section class="progress">
+        <div class="progress greenlevel">
+            <p class="progress greenlevel name"><strong>My Cart</strong></p>
+            <div class="progress greenlevel number">1</div>
+        </div>
+        <div class="progress steps">
+            <i class="fa-solid fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
+            <i class="fa-solid fa-circle fa-xs"></i>
+        </div>
+        <div class="progress greenlevel">
+            <p class="progress greenlevel name"><strong>Checkout</strong></p>
+            <div class="progress greenlevel number">2</div>
+        </div>
+        <div class="progress steps">
+            <i class="fa-solid fa-circle fa-xs"></i>
+            <i class="fa-regular fa-circle fa-xs"></i>
+            <i class="fa-regular fa-circle fa-xs"></i>
+        </div>
+        <div class="progress greenlevel">
+            <p class="progress greenlevel name"><strong>Success</strong></p>
+            <div class="progress whitelevel number">3</div>
+        </div>
+    </section>
+    <section class="form">
+    <div class="checkoutform">
+        <div class=" address">
+            
+            <div class="row">
+                <label for="radio"></label>
+                <input type="checkbox" id="radio">
+                <div class="address center">
+                    <p><strong>Standard Address</strong></p>
+                    <p>Customer Whatever</p>
+                    <p>Somestreet 23</p>
+                    <p>1010 Addresscity</p>
+                    <p>Countryland</p>
+                    <p>E-mail:<a href="#"> dude@sketchymail.com</a></p>
+                    <p>Mobile:<a href="#"> 555-12345-555</a></p>
+                </div>
+                <a href="login.html" id="edit">Edit</a>
+                </div>
+                <div class="buttoncontainer radio">
+                    <a href="checkoutpay.html" class="button" id="addressbutton">Use this address</a>
+                </div>
+        </div>
+            <div class="login alt" id="checkoutlines">
+                <div class="lines" id="lines"></div>
+                <p>or</p>
+                <div class="lines" id="lines"></div>
+            </div>
+            
+            <div class="newaddress">
+                <div class="column">
+                <label for="select">Title</label>
+                <select id="select">
+                    <option value="mister">Mr.</option>
+                    <option value="missus">Mrs.</option>
+                    <option value="earl">Earl</option>
+                    <option value="lord">Lord</option>
+                    <option value="master">Master of the universe</option>
+                </select>
+                <label for="firstname">First name</label>
+                <input type="text" id="firstname">
+                <label for="lastname">Last name</label>
+                <input type="text" id="Lastname">
+                <label for="address">Address</label>
+                <input type="text" id="address">
+                <label for="city">City</label>
+                <input type="text" id="city">
+                <label for="phone">Phone</label>
+                <input type="number" id="phone">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+                </div>
+                <div class="buttoncontainer">
+                    <a href="checkoutpay.html" class="button" id="addressbutton">Use this address</a>
+                </div>
+            </div>
+            
+        </div>
+       
+        
+        
+    </section>
+</main>   
+<footer>
+    <h3>Come in contact with <span>us</span></h3>
+    <div class="line"></div>
+    <div class="contact" id="contact">
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-square-phone fa-xl"></i>
+                    <p class="icontext">+555-466-801</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-square-envelope fa-xl"></i>
+                    <p class="icontext">info@rainydays.com</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    <p class="icontext">Rainstreet 55, 889 Jacketville</p>
+                </a>
+            </li>
+        </ul>
+        <div class="socialicons">
+            <a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+            <a href="www.twitter.com"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+            <a href="www.instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+            <a href="www.youtube.com"><i class="fa-brands fa-square-youtube fa-xl"></i></a>
+            <div class="uparrow"><a href="#"><i class="fa-solid fa-circle-arrow-up fa-xl"></i></a></div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

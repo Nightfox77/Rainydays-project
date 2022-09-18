@@ -8,6 +8,10 @@ main {
     padding-top: 104px;
     
 }
+p {
+    font-family: Roboto;
+    color: #242424;
+}
 /* Headbar with logo,burgermenu,shoppingcart */
 nav {
     box-sizing: border-box;
@@ -31,6 +35,7 @@ li {
 a {
     text-decoration: none;
     font-family: Roboto;
+
 }
 a:hover {
     cursor: pointer;
@@ -206,8 +211,6 @@ h1 {
     justify-content: center;
     gap: 20px;
 }
-
-
 .bestseller {
     text-align: center;
     padding: 20px 20px;
@@ -264,18 +267,23 @@ h2 {
     font-weight: bold;
     margin: 10px 0 0 0;
     font-family: Roboto;
-    color: #242424;
+    
     
 }
 .product-price, .product-oldprice, .product-newprice {
     font-size: 1.1rem;
     display: inline;
     font-family: Roboto;
-    color: #242424;
+    
 }
 .product-stars {
     margin-top: 10px;
 }
+.product-stars p {
+   
+    display: inline-block;
+}
+
 .fa-star, .fa-star-half-stroke {
     color: rgb(255, 234, 0);
 }
@@ -292,6 +300,7 @@ h2 {
     padding-right: 5px;
     color: #242424;
 }
+/* Footer with contactinfo */
 footer {
     background-color: #0B2752;
     color: white;
@@ -379,7 +388,6 @@ h3 span,h1 span {
 .productpres {
     max-width: 100%;
     padding: 20px 0;
-    font-family: Roboto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,7 +397,6 @@ h3 span,h1 span {
     display: grid;
     grid-template-rows: 1fr ;
     grid-template-columns: 1fr;
-    
     margin-bottom: 20px;
 }
 .productpres .info {
@@ -399,7 +406,6 @@ h3 span,h1 span {
     background-color: white;
 }
 .product-name.info {
-    color: #242424;
     font-weight: 400;
     font-size: 1em;
     margin: 20px 0;
@@ -495,7 +501,7 @@ h3 span,h1 span {
     display: flex;
     padding: 20px;
     gap: 20px;
-    font-family: Roboto;
+    
 }
 .additionalinfo h4 {
     color: #0B2752;
@@ -523,9 +529,6 @@ h3 span,h1 span {
     margin: 50px auto;
     background-color: #d2d2d2;
 }
-.forms p {
-    color: #242424;
-}
 .login {
     display: flex;
     flex-direction: column;
@@ -534,7 +537,6 @@ h3 span,h1 span {
     flex-basis: 50%;
     gap: 20px;
     margin: 20px;
-    font-family: Roboto;
 }
 .login span {
     color: red;
@@ -567,7 +569,7 @@ h3 span,h1 span {
     border-color: white;
     transition: 1s ease-in-out;
 }
-.login .alt {
+.login.alt {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -576,9 +578,9 @@ h3 span,h1 span {
     text-align: center;
 }
 .lines {
-    display: block;
+    display: inline-block;
     height: 1px;
-    width: 30%;
+    flex-basis: 30%;
     background-color: #242424;
 }
 .altbuttons {
@@ -620,6 +622,58 @@ h3 span,h1 span {
     font-family: Roboto;
 }
 /* Shoppingcart */
+.progress {
+    display: flex;
+    padding: 20px 0;
+    font-family: Roboto;
+    justify-content: center;
+    
+
+}
+.progress.greenlevel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.progress.greenlevel.name {
+    padding: 0;
+}
+.progress.greenlevel.number {
+    color: white;
+    background-color: #3FA115;
+    border: 1px solid #3FA115;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+.progress.whitelevel.number {
+    color: #242424;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #3FA115;
+}
+.progress.steps {
+    display: flex;
+    padding: 0;
+    align-items: flex-end;
+}
+.progress.steps i {
+    color: #3FA115;
+    margin: 0 5px 8px 0;
+}
 .cartpres {
     padding: 20px ;
     font-family: Roboto;
@@ -692,10 +746,160 @@ h3 span,h1 span {
 .button.checkout {
     width: 300px;
 }
+/* Checkout */
+.form {
+    padding: 20px;
+    background-color: #24559E;
+}
+.checkoutform, .checkoutpayform {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    font-family: Roboto;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px 20px 5px;
+    gap: 5px;
+}
+.address, .newaddress {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+}
+.newaddress {
+    margin: 0;
+}
+.newaddress input:active, .newaddress input:focus {
+    border-color: #3FA115;
+    outline-color: #3FA115;
+}
+.newaddress .column {
+    width: 60%;
+}
+.address.center {
+    display: flex;
+    padding-top: 0;
+    align-items: flex-start;
+}
+.address.center a{
+    color: #24559E;
+}
+#checkoutlines {
+    margin: 20px 0
+}
+#checkoutlines p {
+    flex-basis: 0;
+}
+.address p {
+    margin: 0 0 5px 0;
+}
+#edit {
+    color: #3FA115;
+    text-decoration: underline;
+    padding: 0 5px;
+}
+/* Payment */
+.paycolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.paybutton, .paybutton ~ label {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    background-color: white;
+    place-items: center;
+    padding: 20px 10px 10px 10px;
+    gap: 1em;
+    border: 1px solid #3FA115;
+}
+.paycolumn .row {
+    gap: 10px;
+    place-items: center;
+    align-items: center;
+}
+.paycolumn .column {
+    margin: 20px auto;
+    place-items: center;
+    max-width: 100%;
+}
+.paycolumn .column input {
+    display: block;
+    max-width: 300px;
+}
+.paycolumn .row input {
+    display: block;
+    max-width: 100px;
+}
+.paybutton  {
+    color: #242424;
+}
+.cardinfo {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+#cardbox {
+    display: none;
+}
+/* Success */
+.formcontainer {
+    background-color: #d2d2d2;
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.formcontainer  .fa-circle-check {
+    display: flex;
+    justify-content: center;
+    transform: translateY(45px);
+}
+.formcolumn {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    text-align: left;
+    margin: 10px 20px;
+    padding: 20px 0;
+}
+.formcolumn p {
+    margin: 0;
+}
+.formrow {
+    border-top: 1px solid #d2d2d2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+#total {
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    gap: 20px;
+}
+
 /* Contactform */
 .contactform {
     margin: 40px 20px;
-    
     display: flex;
     flex-direction: column;
     font-family: Roboto;
@@ -709,7 +913,6 @@ h3 span,h1 span {
 }
 .contactform.item {
     margin: 10px;
-    
 }
 .contactform.item span {
     color: red;
@@ -821,15 +1024,17 @@ h3 span,h1 span {
     }
 }
 @media screen and (min-width:500px) {
-    .breadcrumb {
-        display: flex;
-    }
+    
     .contactform {
         margin: 40px auto;
         width: 70%;
-        
     }
-    
+    .checkoutform {
+        align-items: center;
+    }
+    .formcontainer {
+        width: 70%;
+    }
     
 }
 @media screen and (min-width:800px) {
@@ -851,6 +1056,9 @@ h3 span,h1 span {
     .cartpres.pricesection {
         grid-column: 4 / 5;
         grid-row: 1 ;
+    }
+    .breadcrumb {
+        display: flex;
     }
 }
 @media screen and (max-width:500px) {
@@ -878,6 +1086,19 @@ h3 span,h1 span {
     .searchbar {
         display: flex;
     }
+}
+@media screen and (min-width: 500px) {
+        .checkoutform.newaddress {
+            align-items: center;
+        }
+        .cardinfo {
+            width: 50%;
+           
+        }.newaddress, .address {
+            width: 50%;
+        }
+    
+        
 }
 @media screen and (min-width: 370px) {
     .mobile-sub-category {
