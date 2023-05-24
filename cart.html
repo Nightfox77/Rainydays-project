@@ -5,179 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Buy durable outdoor jackets from Rainydays">
-    <title>Rainydays Shoppingcart</title>
+    <title>Rainydays Shopping cart/ checkout</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/5290b1a98f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,600&family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3453146,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 <body>
-<header>
-    <nav>
-    <div class="mobile-nav">
-        <label for="burgermenu"><i class="fa-solid fa-bars fa-xl"></i></label>
-        <input type="checkbox" id="burgermenu">
-            <div class="mobile-nav-list">
-                <div>
-                    <label for="main-category-men">Men`s</label>              
-                    <input type="checkbox" id="main-category-men">
-                    <div class="mobile-sub-category">
-                        <ul >
-                            <li><a href="alljackets-men.html">All</a></li>
-                            <li><a href="menjacket.html">Jacket 1</a></li>
-                            <li><a href="menjacket.html">Jacket 2</a></li>
-                            <li><a href="menjacket.html">Jacket 3</a></li>
-                        </ul>
-                    </div>
-                </div> 
-                <div>
-                    <label for="main-category-women">Women`s</label>              
-                    <input type="checkbox" id="main-category-women">
-                    <div class="mobile-sub-category">
-                        <ul id="womens-list" >
-                            <li><a href="alljackets-women.html">All</a></li>
-                            <li><a href="womenjacket.html">Jacket 4</a></li>
-                            <li><a href="womenjacket.html">Jacket 5</a></li>
-                            <li><a href="womenjacket.html">Jacket 6</a></li>
-                        </ul>
-                    </div>
-                </div>   
-                <a href="about.html" class="mobile-main-category">About</a>
-                <a href="contact.html" class="mobile-main-category">Contact</a>
-                <a href="login.html" class="mobile-main-category" id="logincategory">Login / Sign in</a>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="Images/RainyDays_Logo(4).png" alt="Rainydays logo" height="60px"></a>
             </div>
-    </div>
-        <div class="logo">
-        <a href="index.html"><img src="Images/RainyDays_Logo(4).png" alt="Rainydays logo"></a>
-        </div>
-        <div class="icons">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-            <label for="searchglass"><i class="fa-solid fa-magnifying-glass fa-xl" id="glassicon"></i></label>
-            <input type="checkbox" id="searchglass">
-            <a href="login.html"><i class="fa-solid fa-user fa-xl"></i></a>
+            <div class="icons">
+                <div><i class="fa-solid fa-magnifying-glass fa-xl" id="searchicon"></i></div>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl" id="cart"></i></a>
+            </div>
+            <div id="burgermenu"><i class="fa-solid fa-bars fa-xl"></i></div>
+                <ul class="menu">
+                    <li class="maincategory"><a href="index.html">Home</a></li>
+                    <ul class="maincategory men">
+                        <li class="maincategory"><a href="alljackets-men.html">Men</a></li>
+                        <ul class="subcategory men">
+                            <li><a href="details.html">Jacket 1</a></li>
+                            <li><a href="details.html">Jacket 2</a></li>
+                            <li><a href="details.html">Jacket 3</a></li>
+                        </ul>
+                    </ul>
+                    <ul class="maincategory women">
+                        <li class="maincategory"><a href="alljackets-women.html">Women</a></li>
+                        <ul class="subcategory women">
+                            <li><a href="details.html">Jacket 1</a></li>
+                            <li><a href="details.html">Jacket 2</a></li>
+                            <li><a href="details.html">Jacket 3</a></li>
+                        </ul>
+                    </ul>   
+                    <li class="maincategory"><a href="about.html" class="maincategory">About</a></li>    
+                    <li class="maincategory"><a href="contact.html" class="maincategory">Contact</a></li>
+                </ul>    
+        </nav>
         <div class="searchbar">
             <form class="search">
                 <input type="search" name="searchbar" placeholder="Search.." class="searchinput">
                 <button type="submit" class="searchbutton"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
             </form>
         </div>
-    </div>
-    </nav>
-</header>
-<main>
-    <div class="breadcrumbs">
-        <div class="breadcrumb">
-            <i class="fa-solid fa-house"></i>
-            <a href="index.html">Home</a>
-            <p> >> </p>
-            <a href="alljackets-men.html">Men Jackets all </a>
-            <p> >> </p>
-            <a href="menjacket.html">Men jacket 1</a>
-            <p> >> </p>
-            <a href="cart.html">Shoppingcart</a>
-        </div>
-    </div>
-    <section class="welcome">
-        <div class="welcome-headline">
-            <h1 style="font-size: 2.5em;">My Cart (1)</h1>
-        </div>
-    </section>
-    <section class="progress">
-        <div class="progress greenlevel">
-            <p class="progress greenlevel name"><strong>My Cart</strong></p>
-            <div class="progress greenlevel number">1</div>
-        </div>
-        <div class="progress steps">
-            <i class="fa-solid fa-circle fa-xs"></i>
-            <i class="fa-solid fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
-        </div>
-        <div class="progress greenlevel">
-            <p class="progress greenlevel name"><strong>Checkout</strong></p>
-            <div class="progress whitelevel number">2</div>
-        </div>
-        <div class="progress steps">
-            <i class="fa-regular fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
-            <i class="fa-regular fa-circle fa-xs"></i>
-        </div>
-        <div class="progress greenlevel">
-            <p class="progress greenlevel name"><strong>Success</strong></p>
-            <div class="progress whitelevel number">3</div>
-        </div>
-    </section>
-    <section class="cartpres">
-        <div class="cartpres container">
-            <div class="cartpres pic">
-                <img src="Images/RainyDays_Jacket1.JPG" alt="Jacket men 1">
+    </header>
+    <main>
+        <section class="welcome cart">
+            <div class="headline">
+                <h1>Shopping Cart</h1>
+                <p>Items 1</p>
             </div>
-            <div class="cartpres info">
-                <p><strong>Jacket 1/m</strong></p>
-                <p><span>Color:</span> Red/Gray</p>
-                <p><span>Size:</span> Large</p>
+        </section>
+        <section class="productgrid cart">
+            <div class="containerwrapper">
+                <div class="card checkout">
+                    <div class="product-pic">
+                        <img src="Images/RainyDays_Jacket1.JPG" alt="Jacket men 1">
+                    </div>
+                    <div class="product-info">
+                        <div class="top">
+                            <p class="product-name">Jacket 1/m</p>
+                            <a href="#" class="remove grey">Remove<i class="fa-regular fa-circle-xmark"></i></a>
+                        </div>
+                            <p>Color: Red/Gray</p>
+                            <p>Size: Large</p>
+                        <div class="select">
+                            <label for="select">Quantity:</label>
+                            <select id="select">
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pricecontainer">
+                        <p class="product-price">Subtotal: $ 129.99</p>
+                        <p class="product-price">Shipping: Free </p>
+                    </div>
+                    <div class="btns">
+                        <a href="#address" class="button checkout" id="checkoutbutton">Continue to Checkout</a>
+                    </div>
+                </div>
+                <form class="card checkout address" id="address">
+                    <p class="product-name">Shipping</p>
+                    <div class="formitem">
+                        <li><label for="name">Name<span class="red"> *</span></label></li>
+                        <li><input type="text" id="name" placeholder="Enter first and lastname"></li>
+                    </div>
+                    <div class="formitem">
+                        <li><label for="address">Address<span class="red"> *</span></label></li>
+                        <li><input type="email" id="email" placeholder="Enter your address (road)"></li>
+                    </div>
+                    <div class="formitem">
+                        <li><label for="zip">Zip code<span class="red"> *</span></label></li>
+                        <li><input type="email" id="email" placeholder="Zip code"></li>
+                    </div>
+                    <div class="formitem">
+                        <li><label for="city">City<span class="red"> *</span></label></li>
+                        <li><input type="email" id="email" placeholder="City name"></li>
+                    </div>
+                    <div class="formitem">
+                        <li><label for="email">Email<span class="red"> *</span></label></li>
+                        <li><input type="email" id="email" placeholder="Enter your email address"></li>
+                    </div>
+                    <div class="formitem">
+                        <li><label for="telefon">Phone<span class="red"> *</span></label></li>
+                        <li><input type="number" id="telefon" placeholder="Enter your phonenumber"></li>
+                    </div>
+                    <div class="btns">
+                        <a href="#payment" class="button checkout" id="nextbutton">Next</a>
+                    </div>
+                </form>
+                <ul class="card checkout payment" id="payment">
+                        <p class="product-name">Payment method</p>
+                        <div class="row">
+                            <div class="formitem">
+                                <label for="vipps">Vipps</label>
+                                <input type="radio" name="payment" id="vipps">
+                            </div>
+                            <div class="formitem">
+                                <label for="credit">Credit card</label>
+                                <input type="radio" name="payment" id="credit">
+                            </div>
+                        </div>
+                        <div class="row lines" >
+                            <div class="line"></div>
+                            <p> or</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="btns">
+                            <a href="#" class="button" id="paypal"><i class="fa-brands fa-paypal"></i>Pay with PayPal</a>
+                        </div>
+                        <form class="credit">
+                            <div class="formitem">
+                                <li><label for="name">Name<span class="red"> *</span></label></li>
+                                <li><input type="text" id="name" placeholder="Enter cardholers name"></li>
+                            </div>
+                            <div class="formitem">
+                                <li><label for="cardnumber">Credit card number<span class="red"> *</span></label></li>
+                                <li><input type="number" id="cardnumber" placeholder="xxxx xxxx xxxx xxxx"></li>
+                            </div>
+                            <div class="row">
+                                <div class="formitem">
+                                    <li><label for="date">Expiry date<span class="red"> *</span></label></li>
+                                    <li><input type="date" id="date" ></li>
+                                </div>
+                                <div class="formitem">
+                                    <li><label for="code">CVV<span class="red"> *</span></label></li>
+                                    <li><input type="number" id="code" placeholder="xxx"></li>
+                                </div>
+                            </div>
+                            <div class="btns">
+                                <a href="#" class="button" id="addItem">Place your order</a>
+                            </div>
+                        </form>
+                        <form class="vipps">
+                            <div class="formitem">
+                                <li><label for="telefon">Phone<span class="red"> *</span></label></li>
+                                <li><input type="number" id="telefon" placeholder="Enter your phonenumber"></li> 
+                            </div>
+                            <div class="btns">
+                                <a href="#" class="button" id="addItem">Place your order</a>
+                            </div>
+                        </form>
+                </ul>
             </div>
-           <div class="cartpres select">
-                <label for="select"></label>
-                <select id="select">
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                </select>
-            </div>
-            <div class="cartpres line"></div>
-            <div class="cartpres pricesection">
-            <div class="cartpres pricebox">
-                <p class="product-price"><span>Subtotal:</span><strong>$ 129.99</strong></p>
-            </div>
-            <div class="cartpres pricebox">
-                <p class="product-price"><span>Shipping:</span><strong>Free</strong></p>
-            </div>
-            </div>
-        </div>
-            </div>
-        </div>
-        <div class="buttoncontainer">
-            <a href="#" class="remove">Remove<i class="fa-regular fa-circle-xmark"></i></a>
-        </div>
-        <div class="buttoncontainer">
-            <a href="checkout.html" class="button checkout">Continue to Checkout</a>
-        </div>
-    </section>
-</main>   
+        </section>
+    </main>   
 <footer>
-    <h3>Come in contact with <span>us</span></h3>
-    <div class="line"></div>
-    <div class="contact" id="contact">
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-square-phone fa-xl"></i>
-                    <p class="icontext">+555-466-801</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-square-envelope fa-xl"></i>
-                    <p class="icontext">info@rainydays.com</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-location-dot fa-xl"></i>
-                    <p class="icontext">Rainstreet 55, 889 Jacketville</p>
-                </a>
-            </li>
-        </ul>
-        <div class="socialicons">
-            <a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
-            <a href="www.twitter.com"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
-            <a href="www.instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
-            <a href="www.youtube.com"><i class="fa-brands fa-square-youtube fa-xl"></i></a>
-            <div class="uparrow"><a href="#"><i class="fa-solid fa-circle-arrow-up fa-xl"></i></a></div>
+    <section class="footer">
+        <h3>Come in contact with <span>us</span></h3>
+        <div class="contact" id="contact">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-square-phone fa-xl"></i>
+                        <p class="icontext">+555-466-801</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-square-envelope fa-xl"></i>
+                        <p class="icontext">info@rainydays.com</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot fa-xl"></i>
+                        <p class="icontext">Rainstreet 55, 889 Jacketville</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="socialicons">
+                <a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                <a href="www.twitter.com"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+                <a href="www.instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                <a href="www.youtube.com"><i class="fa-brands fa-square-youtube fa-xl"></i></a>
+                <div class="uparrow"><a href="#"><i class="fa-solid fa-circle-arrow-up fa-xl"></i></a></div>
+            </div>
         </div>
-    </div>
+    </section>
 </footer>
+<script src="home.js"></script>
 </body>
 </html>

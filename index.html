@@ -11,91 +11,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,600&family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3453146,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
 </head>
 <body>
 <header>
     <nav>
-    <div class="mobile-nav">
-        <label for="burgermenu"><i class="fa-solid fa-bars fa-xl"></i></label>
-        <input type="checkbox" id="burgermenu">
-            <div class="mobile-nav-list">
-                <div>
-                    <label for="main-category-men">Men`s</label>              
-                    <input type="checkbox" id="main-category-men">
-                    <div class="mobile-sub-category">
-                        <ul >
-                            <li><a href="alljackets-men.html">All</a></li>
-                            <li><a href="menjacket.html">Jacket 1</a></li>
-                            <li><a href="menjacket.html">Jacket 2</a></li>
-                            <li><a href="menjacket.html">Jacket 3</a></li>
-                        </ul>
-                    </div>
-                </div> 
-                <div>
-                    <label for="main-category-women">Women`s</label>              
-                    <input type="checkbox" id="main-category-women">
-                    <div class="mobile-sub-category">
-                        <ul id="womens-list" >
-                            <li><a href="alljackets-women.html">All</a></li>
-                            <li><a href="womenjacket.html">Jacket 4</a></li>
-                            <li><a href="womenjacket.html">Jacket 5</a></li>
-                            <li><a href="womenjacket.html">Jacket 6</a></li>
-                        </ul>
-                    </div>
-                </div>   
-                <a href="about.html" class="mobile-main-category">About</a>
-                <a href="contact.html" class="mobile-main-category">Contact</a>
-                <a href="login.html" class="mobile-main-category" id="logincategory">Login / Sign in</a>
-            </div>
-    </div>
         <div class="logo">
-        <a href="index.html"><img src="Images/RainyDays_Logo(4).png" alt="Rainydays logo"></a>
+            <a href="index.html"><img src="Images/RainyDays_Logo(4).png" alt="Rainydays logo" height="60px"></a>
         </div>
         <div class="icons">
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
-            <label for="searchglass"><i class="fa-solid fa-magnifying-glass fa-xl" id="glassicon"></i></label>
-            <input type="checkbox" id="searchglass">
-            <a href="login.html"><i class="fa-solid fa-user fa-xl"></i></a>
-        <div class="searchbar">
-            <form class="search">
-                <input type="search" name="searchbar" placeholder="Search.." class="searchinput">
-                <button type="submit" class="searchbutton"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
-            </form>
+            <div><i class="fa-solid fa-magnifying-glass fa-xl" id="searchicon"></i></div>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl" id="cart"></i></a>
         </div>
-    </div>
+        <div id="burgermenu"><i class="fa-solid fa-bars fa-xl"></i></div>
+            <ul class="menu">
+                <li class="maincategory active"><a href="index.html">Home</a></li>
+                <ul class="maincategory men">
+                    <li class="maincategory"><a href="alljackets-men.html">Men</a></li>
+                    <ul class="subcategory men">
+                        <li><a href="details.html">Jacket 1</a></li>
+                        <li><a href="details.html">Jacket 2</a></li>
+                        <li><a href="details.html">Jacket 3</a></li>
+                    </ul>
+                </ul>
+                <ul class="maincategory women">
+                    <li class="maincategory"><a href="alljackets-women.html">Women</a></li>
+                    <ul class="subcategory women">
+                        <li><a href="details.html">Jacket 1</a></li>
+                        <li><a href="details.html">Jacket 2</a></li>
+                        <li><a href="details.html">Jacket 3</a></li>
+                    </ul>
+                </ul>   
+                <li class="maincategory"><a href="about.html" class="maincategory">About</a></li>    
+                <li class="maincategory"><a href="contact.html" class="maincategory">Contact</a></li>
+            </ul>    
     </nav>
+    <div class="searchbar">
+        <form class="search">
+            <input type="search" name="searchbar" placeholder="Search.." class="searchinput">
+            <button type="submit" class="searchbutton"><i class="fa-solid fa-magnifying-glass fa-lg"></i></button>
+        </form>
+    </div>
 </header>
 <main>
-    <div class="breadcrumbs">
-        <div class="breadcrumb">
-            <i class="fa-solid fa-house"></i>
-            <a href="index.html">Home</a>
-        </div>
-    </div>
     <section class="welcome">
-        <div class="welcome-headline">
-            <h1>Discover our Jackets</h1>
+        <div class="headline">
+            <h1>Discover <span>our</span> Jackets</h1>
         </div>
-        <div class="welcome-btns">
+        <div class="btns">
             <a href="alljackets-men.html" class="button">Men</a>
             <a href="alljackets-women.html" class="button">Women</a>
         </div>
     </section>
-    <section class="bestseller">
-        <h2>Best Sellers</h2>
-        <div class="line"></div>
-    </section>
-    <div class="productgrid">
-            <a href="menjacket.html" class="product-container">
+    <div class="sale">
+        <h2>On sale</h2>
+    </div>
+    <section class="productgrid">
+            <a href="details.html" class="product-container">
                 <div class="product-pic">
-                <img src="Images/RainyDays_Jacket1.jpg" alt="Jacket men 1">
+                    <img src="Images/RainyDays_Jacket1.jpg" alt="Jacket men 1">
                 </div>
-                <div class="heart">
-                    <i class="fa-regular fa-heart fa-xl"></i>
-                </div>   
                 <div class="product-info">
+                    <div class="heart">
+                        <i class="fa-regular fa-heart fa-xl"></i>
+                    </div>   
                     <p class="product-name">Jacket 1/m</p>
                     <p class="product-price">$ 129.99</p>
+                </div>
                 <div class="product-stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -103,21 +94,20 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-regular fa-star"></i>
                     <p>(4.5)</p>
-                    
                 </div>
-            </div>
-        </a>
-        <a href="womenjacket.html" class="product-container">
+            </a>
+        <a href="details.html" class="product-container">
             <div class="product-pic">
                 <img src="Images/RainyDays_Jacket2.jpg" alt="Jacket women 4">
             </div>
-            <div class="heart">
-                <i class="fa-regular fa-heart fa-xl"></i>
-            </div>   
             <div class="product-info">
+                <div class="heart">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                </div>   
                 <p class="product-name">Jacket 4/w</p>
-                <p class="product-oldprice">$ 129.99</p>
-                <p class="product-newprice">$ 109.99</p>
+                <p class="product-price" id="oldprice">$ 129.99</p>
+                <p class="product-price red">$ 109.99</p>
+            </div>
                 <div class="product-stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -126,18 +116,18 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                     <p>(4.8)</p>
                 </div>
-            </div>
         </a>
-        <a href="menjacket.html" class="product-container">
+        <a href="details.html" class="product-container">
             <div class="product-pic">
                 <img src="Images/RainyDays_Jacket6.jpg" alt="Jacket men 3">
             </div>
-            <div class="heart">
-                <i class="fa-regular fa-heart fa-xl"></i>
-            </div>   
             <div class="product-info">
+                <div class="heart">
+                    <i class="fa-regular fa-heart fa-xl"></i>
+                </div>   
                 <p class="product-name">Jacket 3/m</p>
                 <p class="product-price">$ 189.99</p>
+            </div>
                 <div class="product-stars">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -146,18 +136,19 @@
                     <i class="fa-solid fa-star"></i>
                     <p>(5.0)</p>
                 </div>
-            </div>
         </a>
-        <a href="menjacket.html" class="product-container">
+        <a href="details.html" class="product-container">
             <div class="product-pic">
             <img src="Images/RainyDays_Jacket1.jpg" alt="Jacket men 1">
             </div>
-            <div class="heart">
-                <i class="fa-regular fa-heart fa-xl"></i>
-            </div>   
             <div class="product-info">
+                <div class="heart">
+                    <i class="fa-regular fa-heart fa-xl" id="emptyheart"></i>
+                    <i class="fa-solid fa-heart fa-xl" style="color: #9e0000;" id="redheart"></i>
+                </div>   
                 <p class="product-name">Jacket 1/m</p>
                 <p class="product-price">$ 129.99</p>
+            </div>
             <div class="product-stars">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -166,18 +157,18 @@
                 <i class="fa-regular fa-star"></i>
                 <p>(4.5)</p>
             </div>
-        </div>
     </a>
-    <a href="menjacket.html" class="product-container">
+    <a href="details.html" class="product-container">
         <div class="product-pic">
             <img src="Images/RainyDays_Jacket6.jpg" alt="Jacket men 3">
         </div>
-        <div class="heart">
-            <i class="fa-regular fa-heart fa-xl"></i>
-        </div>   
         <div class="product-info">
+            <div class="heart">
+                <i class="fa-regular fa-heart fa-xl"></i>
+            </div>   
             <p class="product-name">Jacket 3/m</p>
             <p class="product-price">$ 189.99</p>
+        </div>
             <div class="product-stars">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -186,42 +177,43 @@
                 <i class="fa-solid fa-star"></i>
                 <p>(5.0)</p>
             </div>
-        </div>
-    </a>
-</div>
+        </a>
+    </section>
 </main>
 <footer>
-    <h3>Come in contact with <span>us</span></h3>
-    <div class="line"></div>
-    <div class="contact" id="contact">
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-square-phone fa-xl"></i>
-                    <p class="icontext">+555-466-801</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-square-envelope fa-xl"></i>
-                    <p class="icontext">info@rainydays.com</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-location-dot fa-xl"></i>
-                    <p class="icontext">Rainstreet 55, 889 Jacketville</p>
-                </a>
-            </li>
-        </ul>
-        <div class="socialicons">
-            <a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
-            <a href="www.twitter.com"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
-            <a href="www.instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
-            <a href="www.youtube.com"><i class="fa-brands fa-square-youtube fa-xl"></i></a>
-            <div class="uparrow"><a href="#"><i class="fa-solid fa-circle-arrow-up fa-xl"></i></a></div>
+    <section class="footer">
+        <h3>Come in contact with <span>us</span></h3>
+        <div class="contact" id="contact">
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-square-phone fa-xl"></i>
+                        <p class="icontext">+555-466-801</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-square-envelope fa-xl"></i>
+                        <p class="icontext">info@rainydays.com</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-location-dot fa-xl"></i>
+                        <p class="icontext">Rainstreet 55, 889 Jacketville</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="socialicons">
+                <a href="www.facebook.com"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                <a href="www.twitter.com"><i class="fa-brands fa-square-twitter fa-xl"></i></a>
+                <a href="www.instagram.com"><i class="fa-brands fa-square-instagram fa-xl"></i></a>
+                <a href="www.youtube.com"><i class="fa-brands fa-square-youtube fa-xl"></i></a>
+                <div class="uparrow"><a href="#"><i class="fa-solid fa-circle-arrow-up fa-xl"></i></a></div>
+            </div>
         </div>
-    </div>
+    </section>
 </footer>
+<script src="home.js"></script>
 </body>
 </html>
