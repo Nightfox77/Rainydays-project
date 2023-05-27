@@ -20,42 +20,27 @@ searchIcon.onclick = function search() {
     }
 }
 
-const radioButtons = document.querySelectorAll('input[type="radio"]')
+const vippsButton = document.querySelector("#vippsbutton");
+const creditButton = document.querySelector("#creditbutton");
+const vippsForm = document.querySelector (".vipps");
+const creditForm = document.querySelector (".credit");
+const paypalButton = document.querySelector("#paypalbutton");
+const lines = document.querySelector("#lines");
 
-radioButtons.forEach(function(radioButton) {
-    
-    radioButton.onchange = function() {
-    const payCredit = document.querySelector(".credit");
-    const payVipps = document.querySelector(".vipps");
-    const radioVipps = document.querySelector("#vipps");
-    const radioCredit = document.querySelector("#credit");
-    const buttonPaypal = document.querySelector("#paypal");
-    let buttonsChecked = false ;
-    
-    for (let i = 0; i < radioButtons.length; i++) {
-        if(radioButtons[i].checked) {
-            buttonsChecked = true;
-            break;
-        }
-    }
-    if (radioVipps.checked) {
-        payVipps.style.display = "flex";
-        payCredit.style.display = "none";
-        buttonPaypal.style.display = "none"
-    
-    } else if (radioCredit.checked) {
-        payCredit.style.display = "flex";
-        payVipps.style.display = "none";
-    
-    } else if (!abuttonsChecked) {
-        payCredit.style.display = "none";
-        payVipps.style.display = "none";
-        buttonPaypal.style.display = "flex";
-    }
+vippsButton.onclick = function showVippsForm() {
+    vippsForm.style.display = "flex";
+    creditForm.style.display = "none";
+    paypalButton.style.display = "none";
+    lines.style.display = "none";
 }
+creditButton.onclick = function showCreditForm() {
+    creditForm.style.display = "flex";
+    vippsForm.style.display = "none";
+    paypalButton.style.display = "none";
+    lines.style.display = "none";
 }
 
-)
+
 
 const checkoutButton = document.querySelector("#checkoutbutton");
 const addressForm = document.querySelector("#address");

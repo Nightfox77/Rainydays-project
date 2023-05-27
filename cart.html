@@ -66,7 +66,10 @@
         <section class="welcome cart">
             <div class="headline">
                 <h1>Shopping Cart</h1>
-                <p>Items 1</p>
+                <div class="row item">
+                    <p>Items:</p>
+                    <p id="itemcount">1</p>
+                </div>
             </div>
         </section>
         <section class="productgrid cart">
@@ -78,7 +81,7 @@
                     <div class="product-info">
                         <div class="top">
                             <p class="product-name">Jacket 1/m</p>
-                            <a href="#" class="remove grey">Remove<i class="fa-regular fa-circle-xmark"></i></a>
+                            <a href="" class="remove grey">Remove</a>
                         </div>
                             <p>Color: Red/Gray</p>
                             <p>Size: Large</p>
@@ -94,14 +97,22 @@
                     </div>
                     <div class="pricecontainer">
                         <p class="product-price">Subtotal: $ 129.99</p>
-                        <p class="product-price">Shipping: Free </p>
+                        <p>Shipping: Free </p>
                     </div>
                     <div class="btns">
-                        <a href="#address" class="button checkout" id="checkoutbutton">Continue to Checkout</a>
+                        <a href="#address" class="button checkout" id="checkoutbutton">Checkout</a>
+                    </div>
+                    <div class="row lines" >
+                        <div class="line"></div>
+                        <p> or</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="btns">
+                        <a href="index.html" class="button checkout" id="continue">Continue shopping</a>
                     </div>
                 </div>
                 <form class="card checkout address" id="address">
-                    <p class="product-name">Shipping</p>
+                    <p class="row product-name">Shipping</p>
                     <div class="formitem">
                         <li><label for="name">Name<span class="red"> *</span></label></li>
                         <li><input type="text" id="name" placeholder="Enter first and lastname"></li>
@@ -131,24 +142,18 @@
                     </div>
                 </form>
                 <ul class="card checkout payment" id="payment">
-                        <p class="product-name">Payment method</p>
-                        <div class="row">
-                            <div class="formitem">
-                                <label for="vipps">Vipps</label>
-                                <input type="radio" name="payment" id="vipps">
+                        <p class=" row product-name">Choose Payment method</p>
+                            <div class="btns column">
+                                <button class="button checkout" name="payment" id="vippsbutton">Vipps</button>
+                                <button class="button checkout" name="payment" id="creditbutton">Credit card</button>
                             </div>
-                            <div class="formitem">
-                                <label for="credit">Credit card</label>
-                                <input type="radio" name="payment" id="credit">
-                            </div>
-                        </div>
-                        <div class="row lines" >
+                        <div class="row lines" id="lines" >
                             <div class="line"></div>
                             <p> or</p>
                             <div class="line"></div>
                         </div>
                         <div class="btns">
-                            <a href="#" class="button" id="paypal"><i class="fa-brands fa-paypal"></i>Pay with PayPal</a>
+                            <a href="#" class="button" id="paypalbutton"><i class="fa-brands fa-paypal"></i>Pay with PayPal</a>
                         </div>
                         <form class="credit">
                             <div class="formitem">

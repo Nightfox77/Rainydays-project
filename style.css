@@ -11,10 +11,9 @@ h1 {
     color: white;
 }
 h2 {
-    font-style: italic;
+    font-weight: bold;
     font-size: 42px;
     color: #0B2752;
-    text-decoration: underline;
 }
 h3 {
     color: white;
@@ -25,9 +24,6 @@ h3 {
 p, label  {
     font-family: Roboto;
     max-width: 500px;
-}
-span {
-    color: #3FA115;
 }
 a{
     text-decoration: none;
@@ -178,32 +174,38 @@ nav #burgermenu {
     color: #242424;
     text-align: center;
     align-self: center;
-    
 }
 .btns {
     font-family: Roboto;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+} 
+.btns.column {
+    flex-direction: column;
+}
+button {
+    border: none;
 }
 .button  {
+    display: flex;
+    gap: 10px;
     color: white;
-    background-color: #31a500;
-    border: 1px solid white;
-    min-width: 120px;
-    text-align: center;
-    border-radius: 3px;
-    padding: 5px 0;
+    background-color: #3FA115;
+    min-width: 100px;
+    max-width: 300px;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 3px 0;
     cursor: pointer;
     font-size: inherit;
     font-family: inherit;
     font-weight: inherit;
 }
-.button:hover:not(#paypal) {
+.button:hover:not(#paypalbutton, #vippsbutton, #continue, #creditbutton) {
     box-shadow: inset 500px 0 #237500;
     transition: 2s ease-in-out;
 }
@@ -245,9 +247,8 @@ nav #burgermenu {
     width: 25px;
     float: right;
 }
-#redheart {
-    margin-top: 8px;
-    display: none;
+.heart i:hover {
+    color: red;
 }
 .product-name {
     margin-top: 0;
@@ -274,6 +275,9 @@ nav #burgermenu {
     display: flex;
     justify-content: space-evenly;
 }
+.row.item {
+    justify-content: center;
+}
 .row.colors, .row.sizes {
     justify-content: left;
 }
@@ -287,7 +291,6 @@ nav #burgermenu {
     display: block;
     width: 20px;
     height: 20px;
-    border: 1px solid black;
     border-radius: 50%;
     text-align: center;
 }
@@ -304,23 +307,17 @@ nav #burgermenu {
 .sizebox p {
     margin: 0;
 }
-#addItem, #paypal, #checkoutbutton {
-    display: flex;
-    background-color: #3FA115;
-    max-width: 300px;
-    min-width: 200px;
-    padding: 10px 0;
-    color: white;
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+#addItem, #paypalbutton, .button.checkout, #continue {
+   padding: 10px 20px;
 }
-#paypal {
+#continue {
+    background-color: #24559E;
+}
+#paypalbutton {
     background-color: rgb(255, 238, 0);
     color: #24559E;
 }
-#paypal:hover {
+#paypalbutton:hover {
     box-shadow: inset 500px 0 rgb(255, 208, 0);
     transition: 2s ease-in-out;
 }
@@ -330,10 +327,13 @@ nav #burgermenu {
     text-align: center;
     align-items: center;
 }
-.pricecontainer p {
+.pricecontainer .product-price {
     font-size: 24px;
     font-weight: bold;
     margin: 20px 0 0 0;
+}
+.product-info .btns, form .btns {
+    margin-top: 20px;
 }
 .product-container.detail {
     padding: 0;
@@ -341,6 +341,12 @@ nav #burgermenu {
 }
 .product-container.detail img {
     max-height: 500px;
+}
+#vippsbutton {
+    background-color: rgb(250, 93, 36);
+}
+#creditbutton {
+    background-color: #24559E;
 }
 /* contact */
 .productgrid.contact, .productgrid.cart {
@@ -371,6 +377,9 @@ nav #burgermenu {
     align-items: center;
     order: 2;
     margin: 70px 0;
+}
+.contact .card {
+    gap: 20px;
 }
 .red {
     color: red;
@@ -423,6 +432,7 @@ form {
 }
 form.credit, form.vipps {
     flex-direction: column;
+    display: none;
 }
 .formitem {
     display: flex;
@@ -467,11 +477,7 @@ form.credit, form.vipps {
 .button.checkout {
     padding: 10px;
 }
-input[type="radio"]  {
-    height: 15px;
-}
 #select {
-    width: 30%;
     text-align: center;
     padding: 5px;
     background-color: #e7e7e7; 
@@ -494,9 +500,8 @@ input[type="radio"]  {
 }
 .row input {
     max-width: 90%;
-
 }
-.credit, .vipps, .payment, .address {
+.payment, .address {
     display: none;
 }
 /*footer */
@@ -558,7 +563,10 @@ footer {
     .btns {
         padding-top: 50px;
     }
-    i:hover:not(.product-stars i, .button i) {
+    .welcome .btns {
+        margin-top: 50px;
+    }
+    i:hover:not(.product-stars i, .button i, .heart i) {
         color: #3FA115;
     }
     h1 {
