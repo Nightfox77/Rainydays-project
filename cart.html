@@ -114,35 +114,35 @@
                 <form class="card checkout address" id="address">
                     <p class="row product-name">Shipping</p>
                     <div class="formitem">
-                        <li><label for="name">Name<span class="red"> *</span></label></li>
+                        <li><label for="name">Name<span class="red"> *</span><span class="red errormessage" id="errorName">Enter your full name</span></label></li>
                         <li><input type="text" id="name" placeholder="Enter first and lastname"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="address">Address<span class="red"> *</span></label></li>
-                        <li><input type="email" id="email" placeholder="Enter your address (road)"></li>
+                        <li><label for="addressinput">Address<span class="red"> *</span><span class="red errormessage" id="errorAddress">Enter a valid address</span></label></li>
+                        <li><input type="text" id="addressinput" placeholder="Enter your address (road)"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="zip">Zip code<span class="red"> *</span></label></li>
-                        <li><input type="email" id="email" placeholder="Zip code"></li>
+                        <li><label for="zip">Zip code<span class="red"> *</span><span class="red errormessage" id="errorZip">Enter a 4 digit zip code</span></label></li>
+                        <li><input type="number" id="zip" placeholder="Zip code"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="city">City<span class="red"> *</span></label></li>
-                        <li><input type="email" id="email" placeholder="City name"></li>
+                        <li><label for="city">City<span class="red"> *</span><span class="red errormessage" id="errorCity">Enter a city</span></label></li>
+                        <li><input type="text" id="city" placeholder="City name"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="email">Email<span class="red"> *</span></label></li>
+                        <li><label for="email">Email<span class="red"> *</span><span class="red errormessage" id="errorMail">Enter a valid email address</span></label></li>
                         <li><input type="email" id="email" placeholder="Enter your email address"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="telefon">Phone<span class="red"> *</span></label></li>
-                        <li><input type="number" id="telefon" placeholder="Enter your phonenumber"></li>
+                        <li><label for="phone">Phone<span class="red"> *</span><span class="red errormessage" id="errorPhone">Enter a valid phone number(8 digits)</span></label></li>
+                        <li><input type="number" id="phone" placeholder="Enter your phonenumber"></li>
                     </div>
                     <div class="btns">
-                        <a href="#payment" class="button checkout" id="nextbutton">Next</a>
+                        <button class="button checkout" name="payment" id="nextbutton" disabled>Next</button>
                     </div>
                 </form>
                 <ul class="card checkout payment" id="payment">
-                        <p class=" row product-name">Choose Payment method</p>
+                        <p class="row product-name">Choose Payment method</p>
                             <div class="btns column">
                                 <button class="button checkout" name="payment" id="vippsbutton">Vipps</button>
                                 <button class="button checkout" name="payment" id="creditbutton">Credit card</button>
@@ -225,6 +225,8 @@
         </div>
     </section>
 </footer>
-<script src="home.js"></script>
+<script type="module" src="home.js"></script>
+<script type="module" src="cartValidation.js"></script>
+<script type="module" src="effects.js"></script>
 </body>
 </html>

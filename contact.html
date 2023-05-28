@@ -73,23 +73,23 @@
             <ul class="product-container contact">
                 <div class="card">
                     <div class="formitem">
-                        <li><label for="name">Name<span class="red"> *</span></label></li>
+                        <li><label for="name">Name<span class="red"> *</span><span class="red errormessage" id="errorName">Enter your full name</span></label></li>
                         <li><input type="text" id="name" placeholder="Enter first and lastname"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="email">Email<span class="red"> *</span></label></li>
+                        <li><label for="email">Email<span class="red"> *</span><span class="red errormessage" id="errorMail">Enter a valid email address</span></label></li>
                         <li><input type="email" id="email" placeholder="Enter your email address"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="telefon">Phone<span class="red"> *</span></label></li>
-                        <li><input type="text" id="telefon" placeholder="Enter your phonenumber"></li>
+                        <li><label for="phone">Phone<span class="red"> *</span><span class="red errormessage" id="errorPhone">Enter a valid phone number(8 digits)</span></label></li>
+                        <li><input type="number" id="phone" placeholder="Enter your phone number"></li>
                     </div>
                     <div class="formitem">
-                        <li><label for="message">Message<span class="red"> *</span></label></li>
-                        <li><textarea cols="10" rows="8" placeholder="Your message"></textarea></li>
+                        <li><label for="message">Message<span class="red"> *</span><span class="red errormessage" id="errorText">at least 25 characters</span></label></li>
+                        <li><textarea id="message" cols="10" rows="8" placeholder="Your message"></textarea></li>
                     </div>
                     <div class="btns">
-                        <a href="#" class="button" id="addItem">Submit</a>
+                        <button class="button checkout" name="payment" id="nextbutton" disabled>Submit</button>
                     </div>
                 </div>
             </ul>
@@ -135,6 +135,7 @@
         </div>
     </section>
 </footer>
-<script src="home.js"></script>
+<script type="module" src="home.js"></script>
+<script type="module" src="contactValidation.js"></script>
 </body>
 </html>
