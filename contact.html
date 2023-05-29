@@ -71,7 +71,7 @@
     <form class="productgrid contact">
         <div class="containerwrapper">
             <ul class="product-container contact">
-                <div class="card">
+                <div class="card" id="contactCard">
                     <div class="formitem">
                         <li><label for="name">Name<span class="red"> *</span><span class="red errormessage" id="errorName">Enter your full name</span></label></li>
                         <li><input type="text" id="name" placeholder="Enter first and lastname"></li>
@@ -91,6 +91,10 @@
                     <div class="btns">
                         <button class="button checkout" name="payment" id="nextbutton" disabled>Submit</button>
                     </div>
+                </div>
+                <div class="card" id="successCard">
+                    <h2>Thanks for reaching out.</h2>
+                    <h2>We get back to you as soon as possible.</h2>
                 </div>
             </ul>
         <div class="product-container contact blur">

@@ -1,4 +1,13 @@
 
+const price = document.querySelector("#price");
+const selectElement = document.querySelector("#select");
+let originalPrice = parseFloat(price.innerHTML);
+selectElement.addEventListener("change", function() {
+  const selected = selectElement.options[selectElement.selectedIndex].text;
+  let updatedPrice = (originalPrice * selected);
+  price.innerHTML = updatedPrice;
+})
+
 
 
 const checkoutButton = document.querySelector("#checkoutbutton");
@@ -117,7 +126,8 @@ function checkAllFields() {
   
     nextButton.disabled = !allFieldsValid;
 }
-nextButton.onclick = function showPayment() {
+nextButton.onclick = function showPayment(event) {
+    event.preventDefault();
     payform.style.display = "flex";
 }
 }

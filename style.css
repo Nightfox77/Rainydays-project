@@ -199,6 +199,7 @@ button {
     min-width: 100px;
     max-width: 400px;
     justify-content: center;
+    align-items: center;
     border-radius: 25px;
     padding: 10px 40px;
     cursor: pointer;
@@ -311,7 +312,7 @@ button:disabled {
     background-color: #24559E;
 }
 #paypalbutton {
-    background-color: rgb(255, 238, 0);
+    background-color: rgb(255, 224, 47);
     color: #24559E;
 }
 #paypalbutton:hover {
@@ -361,7 +362,7 @@ button:disabled {
     flex-direction: column;
     margin: 20px 0;
 }
-.containerwrapper h2 {
+.containerwrapper h2:not(#successCard h2) {
     color: white;
     text-decoration: none;
 }
@@ -402,6 +403,9 @@ button:disabled {
     border-radius: 10px;
     padding: 50px 20px;
     margin: auto;
+}
+#successCard {
+    display: none;
 }
 .card input, textarea {
     width: 95%;

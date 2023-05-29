@@ -6,13 +6,15 @@ const errorName = document.querySelector("#errorName");
 const errorMail = document.querySelector("#errorMail");
 const errorPhone = document.querySelector("#errorPhone");
 const errorMessage = document.querySelector("#errorText");
-export const nextButton = document.querySelector("#nextbutton");
+const nextButton = document.querySelector("#nextbutton");
+const contactForm = document.querySelector("#contactCard");
+const successMessage = document.querySelector("#successCard");
 
 
 /* 
 checks if input length is more than 1 character
 */
-export function validateName(event) {
+function validateName(event) {
     event.preventDefault();
     if (lengthCheck(fullName.value, 1) === true) {
         errorName.style.display = "";
@@ -25,7 +27,7 @@ export function validateName(event) {
 /* 
 checks if email input matches pattern 
 */
-export function mailValidation(event) {
+function mailValidation(event) {
     event.preventDefault();
     if (validateMail(mail.value) === true) {
         errorMail.style.display = "";
@@ -35,12 +37,11 @@ export function mailValidation(event) {
         nextButton.disabled = true;
 
     }
-    
 }
  /* 
 checks if phone input is a number and more than 7 digits
 */
-export function validatePhone(event) {
+function validatePhone(event) {
     event.preventDefault();
     if (lengthCheck(phone.value, 7)) {
         errorPhone.style.display = "";
@@ -49,7 +50,6 @@ export function validatePhone(event) {
         errorPhone.style.display = "inline";
         nextButton.disabled = true;
     }
-    
 }
 /* 
 checks if input length is more than 24 characters
@@ -75,13 +75,12 @@ function checkAllFields() {
       lengthCheck(phone.value, 7) &&
       lengthCheck(message.value, 24)
     );
-  
     nextButton.disabled = !allFieldsValid;
 }
   /* 
 checks length of input
 */ 
-export function lengthCheck(value, len) {
+function lengthCheck(value, len) {
     if(value.trim().length > len) {
         return true;
     }
@@ -89,11 +88,10 @@ export function lengthCheck(value, len) {
         return false;
     }
 }
-
 /* 
 checks mail input pattern
 */
-export function validateMail(mailValue) {
+function validateMail(mailValue) {
     const regEx = /\S+@\S+\.\S+/;
     const matchingPattern = regEx.test(mailValue);
     return matchingPattern;
@@ -103,3 +101,9 @@ fullName.addEventListener("input", validateName);
 mail.addEventListener("input", mailValidation);
 phone.addEventListener("input", validatePhone);
 message.addEventListener("input", validateMessage);
+
+nextButton.onclick = function showSuccess(event) {
+    event.preventDefault();
+    contactForm.style.display = "none";
+    successMessage.style.display = "flex";
+}
