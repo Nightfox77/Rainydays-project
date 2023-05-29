@@ -1,6 +1,12 @@
 html,body {
     margin: 0;
     scroll-behavior: smooth;
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 h1,h2,h3,h4 {
     font-family: Raleway;
@@ -276,6 +282,11 @@ button:disabled {
     display: flex;
     justify-content: space-evenly;
 }
+.row.success {
+    background-color: #0B2752;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
 .row.item {
     justify-content: center;
 }
@@ -406,6 +417,14 @@ button:disabled {
 }
 #successCard {
     display: none;
+    padding: 0;
+    text-align: center;
+}
+#successCard h2 { 
+    margin: 0;
+}
+#successCard p {
+    align-self: center;
 }
 .card input, textarea {
     width: 95%;
@@ -510,6 +529,8 @@ footer {
     background-color: #0B2752;
     padding: 10px;
     display: block;
+    margin-top: auto;
+    
 }
 .footer {
     color: white;

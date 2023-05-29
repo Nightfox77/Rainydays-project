@@ -74,7 +74,7 @@
         </section>
         <section class="productgrid cart">
             <div class="containerwrapper">
-                <div class="card checkout">
+                <div class="card checkout" id="shoppingCart">
                     <div class="product-pic">
                         <img src="Images/RainyDays_Jacket1.JPG" alt="Jacket men 1">
                     </div>
@@ -159,37 +159,44 @@
                         </div>
                         <form class="credit">
                             <div class="formitem">
-                                <li><label for="name">Name<span class="red"> *</span></label></li>
-                                <li><input type="text" id="name" placeholder="Enter cardholers name"></li>
+                                <li><label for="namePay">Name<span class="red"> *</span><span class="red errormessage" id="errorNamePay">Enter your full name</span></label></li>
+                                <li><input type="text" id="namePay" placeholder="Enter cardholers name"></li>
                             </div>
                             <div class="formitem">
-                                <li><label for="cardnumber">Credit card number<span class="red"> *</span></label></li>
-                                <li><input type="number" id="cardnumber" placeholder="xxxx xxxx xxxx xxxx"></li>
+                                <li><label for="cardnumber">Credit card number<span class="red"> *</span><span class="red errormessage" id="errorNumber">Enter credit card number(16 digits)</span></label></li>
+                                <li><input type="number" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx"></li>
                             </div>
                             <div class="row">
                                 <div class="formitem">
-                                    <li><label for="date">Expiry date<span class="red"> *</span></label></li>
+                                    <li><label for="date">Expiry date<span class="red"> *</span><span class="red errormessage" id="errorDate">Choose a expiry date</span></label></li>
                                     <li><input type="date" id="date" ></li>
                                 </div>
                                 <div class="formitem">
-                                    <li><label for="code">CVV<span class="red"> *</span></label></li>
+                                    <li><label for="code">CVV<span class="red"> *</span><span class="red errormessage" id="errorCvv">Enter CVV code(3 digits)</span></label></li>
                                     <li><input type="number" id="code" placeholder="xxx"></li>
                                 </div>
                             </div>
                             <div class="btns">
-                                <a href="#" class="button" id="addItem">Place your order</a>
+                                <button class="button" id="orderCredit" disabled>Place your order</button>
                             </div>
                         </form>
                         <form class="vipps">
                             <div class="formitem">
-                                <li><label for="telefon">Phone<span class="red"> *</span></label></li>
-                                <li><input type="number" id="telefon" placeholder="Enter your phonenumber"></li> 
+                                <li><label for="phonePay">Phone<span class="red"> *</span><span class="red errormessage" id="errorPhonePay">Enter a valid phone number(8 digits)</span></label></li>
+                                <li><input type="number" id="phonePay" placeholder="Enter your phonenumber"></li> 
                             </div>
                             <div class="btns">
-                                <a href="#" class="button" id="addItem">Place your order</a>
+                                <button class="button" id="orderVipps" disabled>Place your order</button>
                             </div>
                         </form>
                 </ul>
+                <div class="card checkout" id="successCard">
+                    <div class="row success">
+                        <a href="index.html"><img src="Images/RainyDays_Logo(4).png" alt="Rainydays logo" height="60px"></a>
+                    </div>
+                    <h2>Thank you for your order!</h2> 
+                    <p>Your package is soon on it's way</p>
+                </div>
             </div>
         </section>
     </main>   
@@ -229,6 +236,5 @@
 </footer>
 <script type="module" src="home.js"></script>
 <script type="module" src="cartValidation.js"></script>
-<script type="module" src="effects.js"></script>
 </body>
 </html>
