@@ -28,7 +28,7 @@ let productContainer = document.querySelectorAll(".product-container");
 
 productContainer.forEach(function (container) {
 const link = container;
-
+/* excludes .contact and .about */
 if(container.classList.contains("contact") || container.classList.contains("about")) {
     return;
 }
