@@ -68,7 +68,7 @@
                 <h1>Shopping Cart</h1>
                 <div class="row item">
                     <p>Items:</p>
-                    <p id="itemcount">1</p>
+                    <p id="itemCount"> 1</p>
                 </div>
             </div>
         </section>
@@ -113,6 +113,14 @@
                         <a href="index.html" class="button checkout" id="continue">Continue shopping</a>
                     </div>
                 </div>
+                <div class="card checkout" id="emptyCart">
+                    <h2 class="row">Your shopping cart is empty</h2>
+                    <h4 class="row">Discover our Jackets</h4>
+                    <div class="btns">
+                        <a href="alljackets-men.html" class="button">Men</a>
+                        <a href="alljackets-women.html" class="button">Women</a>
+                    </div>
+                </div>
                 <form class="card checkout address" id="address">
                     <p class="row product-name">Shipping</p>
                     <div class="formitem">
@@ -140,7 +148,7 @@
                         <li><input type="number" id="phone" placeholder="Enter your phonenumber"></li>
                     </div>
                     <div class="btns">
-                        <button class="button checkout" name="payment" id="nextbutton" disabled>Next</button>
+                        <button class="button checkout"  id="nextbutton" disabled>Next</button>
                     </div>
                 </form>
                 <ul class="card checkout payment" id="payment">
@@ -149,6 +157,38 @@
                                 <button class="button checkout" name="payment" id="vippsbutton">Vipps</button>
                                 <button class="button checkout" name="payment" id="creditbutton">Credit card</button>
                             </div>
+                            <form class="credit">
+                                <div class="formitem">
+                                    <li><label for="namePay">Name<span class="red"> *</span><span class="red errormessage" id="errorNamePay">Enter your full name</span></label></li>
+                                    <li><input type="text" id="namePay" placeholder="Enter cardholers name"></li>
+                                </div>
+                                <div class="formitem">
+                                    <li><label for="cardnumber">Credit card number<span class="red"> *</span><span class="red errormessage" id="errorNumber">Enter credit card number(16 digits)</span></label></li>
+                                    <li><input type="number" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx"></li>
+                                </div>
+                                <div class="row column">
+                                    <div class="formitem">
+                                        <li><label for="date">Expiry date<span class="red"> *</span><span class="red errormessage" id="errorDate">Choose a expiry date</span></label></li>
+                                        <li><input type="date" id="date" ></li>
+                                    </div>
+                                    <div class="formitem">
+                                        <li><label for="code">CVV<span class="red"> *</span><span class="red errormessage" id="errorCvv">Enter CVV code(3 digits)</span></label></li>
+                                        <li><input type="number" id="code" placeholder="xxx"></li>
+                                    </div>
+                                </div>
+                                <div class="btns">
+                                    <button class="button" id="orderCredit" disabled>Place your order</button>
+                                </div>
+                            </form>
+                            <form class="vipps">
+                                <div class="formitem">
+                                    <li><label for="phonePay">Phone<span class="red"> *</span><span class="red errormessage" id="errorPhonePay">Enter a valid phone number(8 digits)</span></label></li>
+                                    <li><input type="number" id="phonePay" placeholder="Enter your phonenumber"></li> 
+                                </div>
+                                <div class="btns">
+                                    <button class="button" id="orderVipps" disabled>Place your order</button>
+                                </div>
+                            </form>
                         <div class="row lines" id="lines" >
                             <div class="line"></div>
                             <p> or</p>
@@ -157,38 +197,7 @@
                         <div class="btns">
                             <a href="#" class="button" id="paypalbutton"><i class="fa-brands fa-paypal"></i>Pay with PayPal</a>
                         </div>
-                        <form class="credit">
-                            <div class="formitem">
-                                <li><label for="namePay">Name<span class="red"> *</span><span class="red errormessage" id="errorNamePay">Enter your full name</span></label></li>
-                                <li><input type="text" id="namePay" placeholder="Enter cardholers name"></li>
-                            </div>
-                            <div class="formitem">
-                                <li><label for="cardnumber">Credit card number<span class="red"> *</span><span class="red errormessage" id="errorNumber">Enter credit card number(16 digits)</span></label></li>
-                                <li><input type="number" id="cardNumber" placeholder="xxxx xxxx xxxx xxxx"></li>
-                            </div>
-                            <div class="row">
-                                <div class="formitem">
-                                    <li><label for="date">Expiry date<span class="red"> *</span><span class="red errormessage" id="errorDate">Choose a expiry date</span></label></li>
-                                    <li><input type="date" id="date" ></li>
-                                </div>
-                                <div class="formitem">
-                                    <li><label for="code">CVV<span class="red"> *</span><span class="red errormessage" id="errorCvv">Enter CVV code(3 digits)</span></label></li>
-                                    <li><input type="number" id="code" placeholder="xxx"></li>
-                                </div>
-                            </div>
-                            <div class="btns">
-                                <button class="button" id="orderCredit" disabled>Place your order</button>
-                            </div>
-                        </form>
-                        <form class="vipps">
-                            <div class="formitem">
-                                <li><label for="phonePay">Phone<span class="red"> *</span><span class="red errormessage" id="errorPhonePay">Enter a valid phone number(8 digits)</span></label></li>
-                                <li><input type="number" id="phonePay" placeholder="Enter your phonenumber"></li> 
-                            </div>
-                            <div class="btns">
-                                <button class="button" id="orderVipps" disabled>Place your order</button>
-                            </div>
-                        </form>
+                        
                 </ul>
                 <div class="card checkout" id="successCard">
                     <div class="row success">

@@ -1,7 +1,19 @@
 const price = document.querySelector("#price");
 const selectElement = document.querySelector("#select");
 let originalPrice = parseFloat(price.innerHTML);
+const remove = document.querySelector(".remove");
+const count = document.querySelector("#itemCount");
+const emptyCart = document.querySelector("#emptyCart");
+const shoppingCart = document.querySelector("#shoppingCart");
 
+
+remove.onclick = function showEmpty(event) {
+    event.preventDefault();
+    shoppingCart.style.display = "none";
+    emptyCart.style.display = "flex";
+    count.innerHTML = "";
+    count.innerHTML = "0";
+}
 selectElement.addEventListener("change", function() {
   const selected = selectElement.options[selectElement.selectedIndex].text;
   let updatedPrice = (originalPrice * selected);
@@ -139,8 +151,7 @@ const lines = document.querySelector("#lines");
 vippsButton.onclick = function showVippsForm() {
     vippsForm.style.display = "flex";
     creditForm.style.display = "none";
-    paypalButton.style.display = "none";
-    lines.style.display = "none";
+    
 
 
 const phone = document.querySelector("#phonePay");
@@ -175,8 +186,7 @@ creditButton.onclick = function showCreditForm(event) {
     event.preventDefault();
     creditForm.style.display = "flex";
     vippsForm.style.display = "none";
-    paypalButton.style.display = "none";
-    lines.style.display = "none";
+    
 
 
 const fullName = document.querySelector("#namePay");

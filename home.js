@@ -1,5 +1,8 @@
 const burgerMenu = document.querySelector("#burgermenu");
 const listMenu = document.querySelector(".menu");
+const heartIcon = document.querySelector("#heart");
+const link = document.querySelector("#link");
+
 
 burgerMenu.onclick = function dropdown() {
     if (listMenu.style.display === "block") {
@@ -21,7 +24,20 @@ searchIcon.onclick = function search() {
 }
 
 
-
-
+link.onclick = function checkHeart(event) {
+    if(event.target.classList.contains("#heart")) {
+        event.stopPropagation();
+        event.preventDefault();
+        heartIcon.style.color = "red";
+    }   else {
+        "";
+    }
+}
+heartIcon.onmousedown = function favorite(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    
+    console.log(event);
+}
 
 
