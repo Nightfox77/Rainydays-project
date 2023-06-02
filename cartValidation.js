@@ -1,3 +1,5 @@
+
+/* handles the remove link in the shoppingcart */
 const price = document.querySelector("#price");
 const selectElement = document.querySelector("#select");
 let originalPrice = parseFloat(price.innerHTML);
@@ -14,19 +16,20 @@ remove.onclick = function showEmpty(event) {
     count.innerHTML = "";
     count.innerHTML = "0";
 }
+/* calculates the price by multiplying with selected quantity */
 selectElement.addEventListener("change", function() {
   const selected = selectElement.options[selectElement.selectedIndex].text;
   let updatedPrice = (originalPrice * selected);
   price.innerHTML = updatedPrice;
 })
 
-
+/* handles the checkoutbutton function */
 const checkoutButton = document.querySelector("#checkoutbutton");
 const addressForm = document.querySelector("#address");
 
 checkoutButton.onclick = function showAddress(){
     addressForm.style.display = "flex";
-
+/* handles the shipping form validation */
 const fullName = document.querySelector("#name");
 const mail = document.querySelector("#email");
 const phone = document.querySelector("#phone");
@@ -102,7 +105,6 @@ function validatePhone(event) {
         nextButton.disabled = true;
     }
 }
-
 function lengthCheck(value, len) {
     if(value && value.trim().length > len) {
         return true;
@@ -147,13 +149,13 @@ const vippsForm = document.querySelector (".vipps");
 const creditForm = document.querySelector (".credit");
 const paypalButton = document.querySelector("#paypalbutton");
 const lines = document.querySelector("#lines");
-
+/* handles the vippsbutton function */
 vippsButton.onclick = function showVippsForm() {
     vippsForm.style.display = "flex";
     creditForm.style.display = "none";
     
 
-
+/* handles the validation of the phonenumber in the vippsform */
 const phone = document.querySelector("#phonePay");
 const errorPhone = document.querySelector("#errorPhonePay");
 const orderButton = document.querySelector("#orderVipps");

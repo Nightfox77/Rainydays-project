@@ -32,10 +32,12 @@ const link = container;
 if(container.classList.contains("contact") || container.classList.contains("about")) {
     return;
 }
+
 const heart = container.querySelector(".heart");
     link.onclick = function navigateTo() {
     window.location.href = "details.html";
 }
+/* toggles the heart's color */ 
 heart.onclick = function redHeart(event) {
     event.stopPropagation();
     if(heart.style.color === "red") {
