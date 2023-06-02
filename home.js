@@ -1,7 +1,7 @@
 const burgerMenu = document.querySelector("#burgermenu");
 const listMenu = document.querySelector(".menu");
-const heartIcon = document.querySelector("#heart");
-const link = document.querySelector("#link");
+
+
 
 
 burgerMenu.onclick = function dropdown() {
@@ -23,21 +23,15 @@ searchIcon.onclick = function search() {
     }
 }
 
+const link = document.querySelector("#link");
+const heart = document.querySelector(".heart");
 
-link.onclick = function checkHeart(event) {
-    if(event.target.classList.contains("#heart")) {
-        event.stopPropagation();
-        event.preventDefault();
-        heartIcon.style.color = "red";
-    }   else {
-        "";
-    }
+
+link.onclick = function navigateTo() {
+    link.style.cursor = "pointer";
+    window.location.href = "details.html";
 }
-heartIcon.onmousedown = function favorite(event) {
-    event.preventDefault();
+heart.onclick = function redHeart(event) {
     event.stopPropagation();
-    
-    console.log(event);
+    heart.style.color = "red"
 }
-
-

@@ -145,7 +145,6 @@ nav #burgermenu {
     margin-top: 20px;
     display: flex;
     text-align: center;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     color: white;
@@ -196,6 +195,10 @@ nav #burgermenu {
 button {
     border: none;
 }
+.button:not(.searchbar,:disabled):hover {
+    box-shadow: inset 300px 0 #2d750e;
+    transition: 2s all ease-out;
+}
 .button, button:not(.searchbutton)  {
     display: flex;
     gap: 10px;
@@ -244,6 +247,9 @@ button:disabled {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+#link {
+    cursor: pointer;
 }
 .product-pic {
     display: flex;
@@ -333,8 +339,19 @@ button:disabled {
 .sizebox p {
     margin: 0;
 }
-#continue {
+#continue,#creditbutton {
     background-color: #24559E;
+}
+#continue:hover, #creditbutton:hover {
+    box-shadow: inset 500px 0 #14305a;;
+    transition: 2s all ease-out;
+}
+#vippsbutton {
+    background-color: rgb(250, 93, 36);
+}
+#vippsbutton:hover {
+    box-shadow: inset 500px 0 rgb(185, 67, 24);
+    transition: 2s all ease-out;
 }
 #paypalbutton {
     background-color: rgb(255, 224, 47);
@@ -342,7 +359,7 @@ button:disabled {
 }
 #paypalbutton:hover {
     box-shadow: inset 500px 0 rgb(255, 208, 0);
-    transition: 2s ease-in-out;
+    transition: 2s all ease-out;
 }
 .pricecontainer {
     display: flex;
@@ -364,12 +381,6 @@ button:disabled {
 }
 .product-container.detail img {
     max-height: 500px;
-}
-#vippsbutton {
-    background-color: rgb(250, 93, 36);
-}
-#creditbutton {
-    background-color: #24559E;
 }
 /* contact */
 .productgrid.contact, .productgrid.cart {
@@ -598,7 +609,6 @@ footer {
     .welcome:not(.welcome.cart) {
         margin: 10px auto;
         height: 700px;
-        align-items: normal;
     }
     .welcome .btns {
         margin-top: 150px;
