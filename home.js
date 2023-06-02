@@ -1,9 +1,7 @@
+
+/* handles the burgermenu functions */
 const burgerMenu = document.querySelector("#burgermenu");
 const listMenu = document.querySelector(".menu");
-
-
-
-
 burgerMenu.onclick = function dropdown() {
     if (listMenu.style.display === "block") {
         listMenu.style.display = "none";
@@ -11,7 +9,7 @@ burgerMenu.onclick = function dropdown() {
         listMenu.style.display = "block";
       }
     };
-    
+/* handles the searchbar fuunctions */    
 const searchIcon = document.querySelector("#searchicon");
 const searchBar = document.querySelector(".searchbar");
 
@@ -23,15 +21,27 @@ searchIcon.onclick = function search() {
     }
 }
 
+/* handles the heart colorchange and the link function for the product container */
 const link = document.querySelector("#link");
 const heart = document.querySelector(".heart");
+let productContainer = document.querySelectorAll(".product-container");
 
+productContainer.forEach(function (container) {
+const link = container;
 
-link.onclick = function navigateTo() {
-    link.style.cursor = "pointer";
+if(container.classList.contains("contact") || container.classList.contains("about")) {
+    return;
+}
+const heart = container.querySelector(".heart");
+    link.onclick = function navigateTo() {
     window.location.href = "details.html";
 }
 heart.onclick = function redHeart(event) {
     event.stopPropagation();
-    heart.style.color = "red"
+    if(heart.style.color === "red") {
+        heart.style.color = ""
+    } else {
+        heart.style.color = "red";
+    }
 }
+})
