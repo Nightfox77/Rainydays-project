@@ -135,7 +135,6 @@ function checkAllFields() {
       validateMail(mail.value) &&
       lengthCheck(phone.value, 7) 
     );
-  
     nextButton.disabled = !allFieldsValid;
 }
 nextButton.onclick = function showPayment(event) {
@@ -143,13 +142,26 @@ nextButton.onclick = function showPayment(event) {
     payform.style.display = "flex";
 }
 }
+/* handles the paypal button function */
+const successMessage = document.querySelector("#successCard");
+const cartForm = document.querySelector("#shoppingCart");
+const payForm = document.querySelector("#payment");
+const welcomeSection = document.querySelector(".welcome");
+const paypalButton = document.querySelector("#paypalbutton");
+paypalButton.onclick = function success(event) {
+    event.preventDefault();
+    event.preventDefault();
+    cartForm.style.display = "none";
+    addressForm.style.display = "none";
+    payForm.style.display = "none";
+    welcomeSection.style.display = "none";
+    successMessage.style.display = "flex";
+}
+/* handles the vippsbutton function */
 const vippsButton = document.querySelector("#vippsbutton");
 const creditButton = document.querySelector("#creditbutton");
 const vippsForm = document.querySelector (".vipps");
 const creditForm = document.querySelector (".credit");
-const paypalButton = document.querySelector("#paypalbutton");
-const lines = document.querySelector("#lines");
-/* handles the vippsbutton function */
 vippsButton.onclick = function showVippsForm() {
     vippsForm.style.display = "flex";
     creditForm.style.display = "none";
@@ -159,6 +171,7 @@ vippsButton.onclick = function showVippsForm() {
 const phone = document.querySelector("#phonePay");
 const errorPhone = document.querySelector("#errorPhonePay");
 const orderButton = document.querySelector("#orderVipps");
+
 const successMessage = document.querySelector("#successCard");
 const cartForm = document.querySelector("#shoppingCart");
 const payForm = document.querySelector("#payment");
@@ -183,7 +196,9 @@ orderButton.onclick = function success(event) {
     welcomeSection.style.display = "none";
     successMessage.style.display = "flex";
 }
+
 }
+/* handles the validation of the phonenumber in the creditform */
 creditButton.onclick = function showCreditForm(event) {
     event.preventDefault();
     creditForm.style.display = "flex";
@@ -198,7 +213,7 @@ const errorName = document.querySelector("#errorNamePay");
 const errorNumber = document.querySelector("#errorNumber");
 const errorCvv = document.querySelector("#errorCvv");
 const orderButton = document.querySelector("#orderCredit");
-
+/* validationprocesses for name,cardnumber,cvv */
 function validateName(event) {
     event.preventDefault();
     if (fullName.value.trim().length > 1) {
@@ -241,13 +256,21 @@ function checkAllFields() {
     )
     orderButton.disabled = !allFieldsValid;
 }
+/* handles the place order and paypal button functions */
 const successMessage = document.querySelector("#successCard");
 const cartForm = document.querySelector("#shoppingCart");
 const payForm = document.querySelector("#payment");
 const addressForm = document.querySelector("#address");
 const welcomeSection = document.querySelector(".welcome");
+const paypalButton = document.querySelector("#paypalbutton");
 
-orderButton.onclick = function success(event) {
+orderButton.onclick = function(event) {
+    success(event);
+}
+paypalButton.onclick = function(event) {
+    success(event);
+}
+function success(event) {
     event.preventDefault();
     cartForm.style.display = "none";
     addressForm.style.display = "none";
@@ -256,9 +279,6 @@ orderButton.onclick = function success(event) {
     successMessage.style.display = "flex";
 }
 }
-
-
-
 
 
 

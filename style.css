@@ -442,7 +442,6 @@ button:disabled {
 }
 #successCard {
     display: none;
-    padding: 0;
     text-align: center;
 }
 #successCard h2 { 
