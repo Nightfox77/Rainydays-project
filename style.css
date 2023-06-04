@@ -71,7 +71,7 @@ nav {
     color: white;
     font-family: Roboto;
     font-size: 20px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
 }
 .subcategory, #itemCount {
     padding-left: 10px;
@@ -661,7 +661,7 @@ footer {
         flex: 100%;
         justify-content: center;
         top: 0;
-        gap: 10px;
+        gap: 30px;
     }
     ul {
         display: inline;
@@ -671,18 +671,21 @@ footer {
         height: 20px;
     }
     .subcategory {
-        display: none;
+        opacity: 0;
         overflow: auto;
         top: 100%;
         position: absolute;
         max-height: 200px;
         width: 100px;
         margin-top: 20px;
+        padding-bottom: 10px;
         padding-left: 0;
         text-align: center;
+        
     }
     .maincategory:hover .subcategory {
-        display: block;
+        opacity: 1;
+       
     }
     .subcategory a {
         padding: 0;

@@ -9,6 +9,7 @@ burgerMenu.onclick = function dropdown() {
         listMenu.style.display = "block";
       }
     };
+   
 /* handles the searchbar fuunctions */    
 const searchIcon = document.querySelector("#searchicon");
 const searchBar = document.querySelector(".searchbar");
@@ -28,7 +29,7 @@ let productContainer = document.querySelectorAll(".product-container");
 
 productContainer.forEach(function (container) {
 const link = container;
-/* excludes .contact and .about */
+/* excludes .contact and .about from acting like a link*/
 if(container.classList.contains("contact") || container.classList.contains("about")) {
     return;
 }
