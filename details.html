@@ -30,26 +30,16 @@
             </div>
             <div class="icons">
                 <div><i class="fa-solid fa-magnifying-glass fa-xl" id="searchicon"></i></div>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-xl" id="cart"><p class="overlay">1</p></i></a>
+                <a class="shoppingCart"><i class="fa-solid fa-cart-shopping fa-xl" id="cart"><p class="overlay">1</p></i></a>
             </div>
             <div id="burgermenu"><i class="fa-solid fa-bars fa-xl"></i></div>
                 <ul class="menu">
                     <li class="maincategory"><a href="index.html">Home</a></li>
                     <ul class="maincategory men">
                         <li class="maincategory"><a href="alljackets-men.html">Men</a></li>
-                        <ul class="subcategory men">
-                            <li><a href="details.html" class="active">Jacket 1</a></li>
-                            <li><a href="details.html">Jacket 2</a></li>
-                            <li><a href="details.html">Jacket 3</a></li>
-                        </ul>
                     </ul>
                     <ul class="maincategory women">
                         <li class="maincategory"><a href="alljackets-women.html">Women</a></li>
-                        <ul class="subcategory women">
-                            <li><a href="details.html">Jacket 1</a></li>
-                            <li><a href="details.html">Jacket 2</a></li>
-                            <li><a href="details.html">Jacket 3</a></li>
-                        </ul>
                     </ul>   
                     <li class="maincategory"><a href="about.html" class="maincategory">About</a></li>    
                     <li class="maincategory"><a href="contact.html" class="maincategory">Contact</a></li>
@@ -64,55 +54,41 @@
     </header>
 <main>
     <section class="welcome details">
-    <div class="welcome-headline">
-        <h1>Outdoor jacket 1</h1>
+    <div class="headline">
+        
     </div>
     </section>
     <section class="productgrid detail">
-        <div class="product-container detail">   
+        <div class="product-container detail">
             <div class="product-pic">
-                <img src="Images/RainyDays_Jacket1.jpg" alt="Jacket men 1">
+                <img id="jacketPic" src="" alt="">
             </div>
         </div>
         <div class="product-container detail">
             <div class="product-info">
-                <p class="product-name">Jacket 1/m</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <div class="product-stars">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <p>(4.7)</p>
-            </div>
-            <div class="row colors">
-                <div><p><strong>Colors:</strong></p></div>
-                <div class="selection">
-                    <div class="colorbox" style="background-color: black;"></div>
-                    <div class="colorbox" style="background-color: green;"></div>
-                    <div class="colorbox" style="background-color: orangered;"></div>
-                    <div class="colorbox" style="background-color: yellow;"></div>
-                    <div class="colorbox" style="background-color: blue;"></div>
+                <p class="product-description"></p>
+                <div class="product-stars">
                 </div>
-            </div>
-            <div class="row sizes">
-                <div><p><strong>Sizes:</strong></p></div>
-                <div class="selection">
-                    <div class="sizebox"><p>S</p></div>
-                    <div class="sizebox"><p>M</p></div>
-                    <div class="sizebox"><p>L</p></div>
-                    <div class="sizebox"><p>XL</p></div>
-                    <div class="sizebox"><p>XXL</p></div>
+                <div class="row colors">
+                    <p>Select a color</p>
+                    <div class="selection">
+
+                    </div>
+                </div>
+                <div class="row sizes">
+                    <p>Select a size</p>
+                    <div class="selection">
+
+                    </div>
                 </div>
             </div>
             <div class="pricecontainer">
-                <p class="product-price">$ 129.99</p>
+                <p class="product-price" id="oldprice"></p>
+                <p class="product-price red"></p>
             </div>
-                <div class="btns">
-                    <button class="button" id="addItem">Add to Cart<i class="fa-solid fa-cart-plus fa-large"></i></button>
-                </div>
-            
+            <div class="btns">
+                <button class="button" id="addItem" disabled="">Add to Cart<i class="fa-solid fa-cart-plus fa-large"></i></button></div>
+            </div>
         </div>
     </section>
     <section class="productgrid detail">

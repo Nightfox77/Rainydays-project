@@ -37,19 +37,9 @@
                     <li class="maincategory"><a href="index.html">Home</a></li>
                     <ul class="maincategory men">
                         <li class="maincategory"><a href="alljackets-men.html">Men</a></li>
-                        <ul class="subcategory men">
-                            <li><a href="details.html">Jacket 1</a></li>
-                            <li><a href="details.html">Jacket 2</a></li>
-                            <li><a href="details.html">Jacket 3</a></li>
-                        </ul>
                     </ul>
                     <ul class="maincategory women">
                         <li class="maincategory"><a href="alljackets-women.html">Women</a></li>
-                        <ul class="subcategory women">
-                            <li><a href="details.html">Jacket 1</a></li>
-                            <li><a href="details.html">Jacket 2</a></li>
-                            <li><a href="details.html">Jacket 3</a></li>
-                        </ul>
                     </ul>   
                     <li class="maincategory"><a href="about.html" class="maincategory">About</a></li>    
                     <li class="maincategory"><a href="contact.html" class="maincategory">Contact</a></li>
@@ -68,7 +58,7 @@
                 <h1>Shopping Cart</h1>
                 <div class="row item">
                     <p>Items:</p>
-                    <p id="itemCount">1</p>
+                    <p id="itemCount"></p>
                 </div>
             </div>
         </section>
@@ -76,28 +66,29 @@
             <div class="containerwrapper">
                 <div class="card checkout" id="shoppingCart">
                     <div class="product-pic">
-                        <img src="Images/RainyDays_Jacket1.JPG" alt="Jacket men 1">
+                        <img src="" alt=""">
                     </div>
                     <div class="product-info">
                         <div class="top">
-                            <p class="product-name">Jacket 1/m</p>
-                            <a href="" class="remove grey">Remove</a>
+                            <p class="product-name"></p>
+                            <a class="remove grey"><i class="fa-solid fa-trash"></i></a>
                         </div>
-                            <p>Color: Red/Gray</p>
-                            <p>Size: Large</p>
+                            <p id="color">Color:</p>
+                            <p id="size">Size:</p>
                         <div class="select">
                             <label for="select">Quantity:</label>
                             <select id="select">
-                                <option value="one">1</option>
-                                <option value="two">2</option>
-                                <option value="three">3</option>
-                                <option value="four">4</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
                             </select>
                         </div>
                     </div>
-                    <div class="pricecontainer">
+                    <div class="pricecontainer" id="cartPrice">
                         <div class="row">
-                            <p class="product-price">Subtotal: $</p><p class="product-price" id="price">129.99</p>
+                            <p class="product-price">Subtotal: $</p>
+                            <p class="product-price" id="price"></p>
                         </div>
                         <p>Shipping: Free </p>
                     </div>
@@ -244,6 +235,7 @@
     </section>
 </footer>
 <script type="module" src="/js/home.js"></script>
+<script type="module" src="/js/cartApi.js"></script>
 <script type="module" src="/js/cartValidation.js"></script>
 </body>
 </html>

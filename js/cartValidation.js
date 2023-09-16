@@ -1,27 +1,7 @@
 
-/* handles the remove link in the shoppingcart */
-const price = document.querySelector("#price");
-const selectElement = document.querySelector("#select");
-let originalPrice = parseFloat(price.innerHTML);
-const remove = document.querySelector(".remove");
-const count = document.querySelector("#itemCount");
-const emptyCart = document.querySelector("#emptyCart");
-const shoppingCart = document.querySelector("#shoppingCart");
 
 
-remove.onclick = function showEmpty(event) {
-    event.preventDefault();
-    shoppingCart.style.display = "none";
-    emptyCart.style.display = "flex";
-    count.innerHTML = "";
-    count.innerHTML = "0";
-}
-/* calculates the price by multiplying with selected quantity */
-selectElement.addEventListener("change", function() {
-  const selected = selectElement.options[selectElement.selectedIndex].text;
-  let updatedPrice = (originalPrice * selected);
-  price.innerHTML = updatedPrice;
-})
+
 
 /* handles the checkoutbutton function */
 const checkoutButton = document.querySelector("#checkoutbutton");
