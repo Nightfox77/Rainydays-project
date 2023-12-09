@@ -1,6 +1,6 @@
 # Rainydays - Cross-course project
 
-![image]https://github.com/Nightfox77/Nightfox77/blob/main/Images/Rainydays-Home.png
+![image](https://github.com/Nightfox77/Nightfox77/blob/main/Images/Rainydays-Home.png)
 
 A Website for durable outdoor jackets
 
